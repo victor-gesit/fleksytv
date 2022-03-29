@@ -14,6 +14,7 @@
 		0D763F9C27F318090054ADAF /* fleksytvTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D763F9B27F318090054ADAF /* fleksytvTests.swift */; };
 		0D763FA627F318090054ADAF /* fleksytvUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D763FA527F318090054ADAF /* fleksytvUITests.swift */; };
 		0D763FA827F318090054ADAF /* fleksytvUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D763FA727F318090054ADAF /* fleksytvUITestsLaunchTests.swift */; };
+		0D8C0F6E27F3390D00F480D9 /* APIRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C0F6D27F3390D00F480D9 /* APIRoutes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		0D763FA127F318090054ADAF /* fleksytvUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fleksytvUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D763FA527F318090054ADAF /* fleksytvUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fleksytvUITests.swift; sourceTree = "<group>"; };
 		0D763FA727F318090054ADAF /* fleksytvUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fleksytvUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0D8C0F6D27F3390D00F480D9 /* APIRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRoutes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		0D763F8927F318080054ADAF /* fleksytv */ = {
 			isa = PBXGroup;
 			children = (
+				0D8C0F6C27F3390300F480D9 /* Networking */,
 				0D763F8A27F318080054ADAF /* fleksytvApp.swift */,
 				0D763F8C27F318080054ADAF /* ContentView.swift */,
 				0D763F8E27F318090054ADAF /* Assets.xcassets */,
@@ -125,6 +128,14 @@
 				0D763FA727F318090054ADAF /* fleksytvUITestsLaunchTests.swift */,
 			);
 			path = fleksytvUITests;
+			sourceTree = "<group>";
+		};
+		0D8C0F6C27F3390300F480D9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				0D8C0F6D27F3390D00F480D9 /* APIRoutes.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D8C0F6E27F3390D00F480D9 /* APIRoutes.swift in Sources */,
 				0D763F8D27F318080054ADAF /* ContentView.swift in Sources */,
 				0D763F8B27F318080054ADAF /* fleksytvApp.swift in Sources */,
 			);
