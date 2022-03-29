@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D763F8B27F318080054ADAF /* fleksytvApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D763F8A27F318080054ADAF /* fleksytvApp.swift */; };
+		0D763F8D27F318080054ADAF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D763F8C27F318080054ADAF /* ContentView.swift */; };
+		0D763F8F27F318090054ADAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D763F8E27F318090054ADAF /* Assets.xcassets */; };
+		0D763F9227F318090054ADAF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D763F9127F318090054ADAF /* Preview Assets.xcassets */; };
+		0D763F9C27F318090054ADAF /* fleksytvTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D763F9B27F318090054ADAF /* fleksytvTests.swift */; };
+		0D763FA627F318090054ADAF /* fleksytvUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D763FA527F318090054ADAF /* fleksytvUITests.swift */; };
+		0D763FA827F318090054ADAF /* fleksytvUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D763FA727F318090054ADAF /* fleksytvUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0D763F9827F318090054ADAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D763F7F27F318080054ADAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D763F8627F318080054ADAF;
+			remoteInfo = fleksytv;
+		};
+		0D763FA227F318090054ADAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D763F7F27F318080054ADAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D763F8627F318080054ADAF;
+			remoteInfo = fleksytv;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D763F8727F318080054ADAF /* fleksytv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fleksytv.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D763F8A27F318080054ADAF /* fleksytvApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fleksytvApp.swift; sourceTree = "<group>"; };
+		0D763F8C27F318080054ADAF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0D763F8E27F318090054ADAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D763F9127F318090054ADAF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0D763F9727F318090054ADAF /* fleksytvTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fleksytvTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D763F9B27F318090054ADAF /* fleksytvTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fleksytvTests.swift; sourceTree = "<group>"; };
+		0D763FA127F318090054ADAF /* fleksytvUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fleksytvUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D763FA527F318090054ADAF /* fleksytvUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fleksytvUITests.swift; sourceTree = "<group>"; };
+		0D763FA727F318090054ADAF /* fleksytvUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fleksytvUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D763F8427F318080054ADAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D763F9427F318090054ADAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D763F9E27F318090054ADAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D763F7E27F318080054ADAF = {
+			isa = PBXGroup;
+			children = (
+				0D763F8927F318080054ADAF /* fleksytv */,
+				0D763F9A27F318090054ADAF /* fleksytvTests */,
+				0D763FA427F318090054ADAF /* fleksytvUITests */,
+				0D763F8827F318080054ADAF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0D763F8827F318080054ADAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D763F8727F318080054ADAF /* fleksytv.app */,
+				0D763F9727F318090054ADAF /* fleksytvTests.xctest */,
+				0D763FA127F318090054ADAF /* fleksytvUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D763F8927F318080054ADAF /* fleksytv */ = {
+			isa = PBXGroup;
+			children = (
+				0D763F8A27F318080054ADAF /* fleksytvApp.swift */,
+				0D763F8C27F318080054ADAF /* ContentView.swift */,
+				0D763F8E27F318090054ADAF /* Assets.xcassets */,
+				0D763F9027F318090054ADAF /* Preview Content */,
+			);
+			path = fleksytv;
+			sourceTree = "<group>";
+		};
+		0D763F9027F318090054ADAF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0D763F9127F318090054ADAF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0D763F9A27F318090054ADAF /* fleksytvTests */ = {
+			isa = PBXGroup;
+			children = (
+				0D763F9B27F318090054ADAF /* fleksytvTests.swift */,
+			);
+			path = fleksytvTests;
+			sourceTree = "<group>";
+		};
+		0D763FA427F318090054ADAF /* fleksytvUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0D763FA527F318090054ADAF /* fleksytvUITests.swift */,
+				0D763FA727F318090054ADAF /* fleksytvUITestsLaunchTests.swift */,
+			);
+			path = fleksytvUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D763F8627F318080054ADAF /* fleksytv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D763FAB27F318090054ADAF /* Build configuration list for PBXNativeTarget "fleksytv" */;
+			buildPhases = (
+				0D763F8327F318080054ADAF /* Sources */,
+				0D763F8427F318080054ADAF /* Frameworks */,
+				0D763F8527F318080054ADAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fleksytv;
+			productName = fleksytv;
+			productReference = 0D763F8727F318080054ADAF /* fleksytv.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0D763F9627F318090054ADAF /* fleksytvTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D763FAE27F318090054ADAF /* Build configuration list for PBXNativeTarget "fleksytvTests" */;
+			buildPhases = (
+				0D763F9327F318090054ADAF /* Sources */,
+				0D763F9427F318090054ADAF /* Frameworks */,
+				0D763F9527F318090054ADAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D763F9927F318090054ADAF /* PBXTargetDependency */,
+			);
+			name = fleksytvTests;
+			productName = fleksytvTests;
+			productReference = 0D763F9727F318090054ADAF /* fleksytvTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0D763FA027F318090054ADAF /* fleksytvUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D763FB127F318090054ADAF /* Build configuration list for PBXNativeTarget "fleksytvUITests" */;
+			buildPhases = (
+				0D763F9D27F318090054ADAF /* Sources */,
+				0D763F9E27F318090054ADAF /* Frameworks */,
+				0D763F9F27F318090054ADAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D763FA327F318090054ADAF /* PBXTargetDependency */,
+			);
+			name = fleksytvUITests;
+			productName = fleksytvUITests;
+			productReference = 0D763FA127F318090054ADAF /* fleksytvUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D763F7F27F318080054ADAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					0D763F8627F318080054ADAF = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					0D763F9627F318090054ADAF = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 0D763F8627F318080054ADAF;
+					};
+					0D763FA027F318090054ADAF = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 0D763F8627F318080054ADAF;
+					};
+				};
+			};
+			buildConfigurationList = 0D763F8227F318080054ADAF /* Build configuration list for PBXProject "fleksytv" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0D763F7E27F318080054ADAF;
+			productRefGroup = 0D763F8827F318080054ADAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D763F8627F318080054ADAF /* fleksytv */,
+				0D763F9627F318090054ADAF /* fleksytvTests */,
+				0D763FA027F318090054ADAF /* fleksytvUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D763F8527F318080054ADAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D763F9227F318090054ADAF /* Preview Assets.xcassets in Resources */,
+				0D763F8F27F318090054ADAF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D763F9527F318090054ADAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D763F9F27F318090054ADAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D763F8327F318080054ADAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D763F8D27F318080054ADAF /* ContentView.swift in Sources */,
+				0D763F8B27F318080054ADAF /* fleksytvApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D763F9327F318090054ADAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D763F9C27F318090054ADAF /* fleksytvTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D763F9D27F318090054ADAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D763FA827F318090054ADAF /* fleksytvUITestsLaunchTests.swift in Sources */,
+				0D763FA627F318090054ADAF /* fleksytvUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D763F9927F318090054ADAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D763F8627F318080054ADAF /* fleksytv */;
+			targetProxy = 0D763F9827F318090054ADAF /* PBXContainerItemProxy */;
+		};
+		0D763FA327F318090054ADAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D763F8627F318080054ADAF /* fleksytv */;
+			targetProxy = 0D763FA227F318090054ADAF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0D763FA927F318090054ADAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0D763FAA27F318090054ADAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0D763FAC27F318090054ADAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"fleksytv/Preview Content\"";
+				DEVELOPMENT_TEAM = 4EG6Z5662E;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gesit.fleksytv;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0D763FAD27F318090054ADAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"fleksytv/Preview Content\"";
+				DEVELOPMENT_TEAM = 4EG6Z5662E;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gesit.fleksytv;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0D763FAF27F318090054ADAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4EG6Z5662E;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gesit.fleksytvTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fleksytv.app/fleksytv";
+			};
+			name = Debug;
+		};
+		0D763FB027F318090054ADAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4EG6Z5662E;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gesit.fleksytvTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fleksytv.app/fleksytv";
+			};
+			name = Release;
+		};
+		0D763FB227F318090054ADAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4EG6Z5662E;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gesit.fleksytvUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = fleksytv;
+			};
+			name = Debug;
+		};
+		0D763FB327F318090054ADAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4EG6Z5662E;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gesit.fleksytvUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = fleksytv;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D763F8227F318080054ADAF /* Build configuration list for PBXProject "fleksytv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D763FA927F318090054ADAF /* Debug */,
+				0D763FAA27F318090054ADAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D763FAB27F318090054ADAF /* Build configuration list for PBXNativeTarget "fleksytv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D763FAC27F318090054ADAF /* Debug */,
+				0D763FAD27F318090054ADAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D763FAE27F318090054ADAF /* Build configuration list for PBXNativeTarget "fleksytvTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D763FAF27F318090054ADAF /* Debug */,
+				0D763FB027F318090054ADAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D763FB127F318090054ADAF /* Build configuration list for PBXNativeTarget "fleksytvUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D763FB227F318090054ADAF /* Debug */,
+				0D763FB327F318090054ADAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0D763F7F27F318080054ADAF /* Project object */;
+}
