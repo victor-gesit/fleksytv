@@ -19,7 +19,7 @@ extension APIRoutes: CustomStringConvertible {
     var description: String {
         switch self {
         case .topRatedTVShows: return Constants.BaseURL + "tv/top_rated"
-        case .tvShowDetail(let tvId): return Constants.BaseURL + "/tv/\(tvId)"
+        case .tvShowDetail(let tvId): return Constants.BaseURL + "tv/\(tvId)"
         case .similarTVShows(let tvId): return Constants.BaseURL + tvId + "/tv/similar"
         case .genres: return Constants.BaseURL + "genre/movie/list"
         case .configuration: return Constants.BaseURL + "configuration"

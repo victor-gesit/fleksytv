@@ -20,6 +20,7 @@
 		0D8C0F8327F3627300F480D9 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C0F8227F3627300F480D9 /* UserDefaults+Extension.swift */; };
 		0D8C0F8627F36E8700F480D9 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C0F8527F36E8700F480D9 /* Genre.swift */; };
 		0D8C0F8C27F371F000F480D9 /* TopRatedTVShowsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C0F8B27F371F000F480D9 /* TopRatedTVShowsResponse.swift */; };
+		0D8C0F8E27F373AF00F480D9 /* GetGenresResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C0F8D27F373AF00F480D9 /* GetGenresResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		0D8C0F8227F3627300F480D9 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
 		0D8C0F8527F36E8700F480D9 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 		0D8C0F8B27F371F000F480D9 /* TopRatedTVShowsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedTVShowsResponse.swift; sourceTree = "<group>"; };
+		0D8C0F8D27F373AF00F480D9 /* GetGenresResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGenresResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				0D8C0F8B27F371F000F480D9 /* TopRatedTVShowsResponse.swift */,
+				0D8C0F8D27F373AF00F480D9 /* GetGenresResponse.swift */,
 			);
 			path = "Response Models";
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				0D8C0F6E27F3390D00F480D9 /* APIRoutes.swift in Sources */,
 				0D8C0F7727F35B8200F480D9 /* Configuration.swift in Sources */,
 				0D763F8D27F318080054ADAF /* ContentView.swift in Sources */,
+				0D8C0F8E27F373AF00F480D9 /* GetGenresResponse.swift in Sources */,
 				0D8C0F8327F3627300F480D9 /* UserDefaults+Extension.swift in Sources */,
 				0D8C0F7527F352F900F480D9 /* TVShow.swift in Sources */,
 				0D763F8B27F318080054ADAF /* fleksytvApp.swift in Sources */,
