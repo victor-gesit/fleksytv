@@ -10,6 +10,7 @@ import Foundation
 extension UserDefaults {
     private enum Keys: String {
         case imageDBConfiguration
+        case allGenres
     }
     
     var imageDBConfiguration: Configuration? {
@@ -26,6 +27,24 @@ extension UserDefaults {
                 set(encoded, forKey: Keys.imageDBConfiguration.rawValue)
             } else {
                 removeObject(forKey: Keys.imageDBConfiguration.rawValue)
+            }
+        }
+    }
+    
+    var allGenres: [Genre]? {
+        get {
+            if let data = object(forKey: Keys.allGenres.rawValue) as? Data {
+                return try? JSONDecoder().decode([Genre].self, from: data)
+            }
+            return nil
+        }
+        
+        set {
+            if newValue != nil,
+                let encoded = try? JSONEncoder().encode(newValue) {
+                set(encoded, forKey: Keys.allGenres.rawValue)
+            } else {
+                removeObject(forKey: Keys.allGenres.rawValue)
             }
         }
     }
