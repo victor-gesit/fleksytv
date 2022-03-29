@@ -19,6 +19,7 @@
 		0D8C0F7727F35B8200F480D9 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C0F7627F35B8200F480D9 /* Configuration.swift */; };
 		0D8C0F8327F3627300F480D9 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C0F8227F3627300F480D9 /* UserDefaults+Extension.swift */; };
 		0D8C0F8627F36E8700F480D9 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C0F8527F36E8700F480D9 /* Genre.swift */; };
+		0D8C0F8C27F371F000F480D9 /* TopRatedTVShowsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C0F8B27F371F000F480D9 /* TopRatedTVShowsResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		0D8C0F7627F35B8200F480D9 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		0D8C0F8227F3627300F480D9 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
 		0D8C0F8527F36E8700F480D9 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		0D8C0F8B27F371F000F480D9 /* TopRatedTVShowsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedTVShowsResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,9 +153,8 @@
 		0D8C0F7327F352EB00F480D9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0D8C0F7427F352F900F480D9 /* TVShow.swift */,
-				0D8C0F7627F35B8200F480D9 /* Configuration.swift */,
-				0D8C0F8527F36E8700F480D9 /* Genre.swift */,
+				0D8C0F8A27F371CE00F480D9 /* Response Models */,
+				0D8C0F8727F371B300F480D9 /* Data Models */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -172,6 +173,24 @@
 				0D8C0F8227F3627300F480D9 /* UserDefaults+Extension.swift */,
 			);
 			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		0D8C0F8727F371B300F480D9 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				0D8C0F7427F352F900F480D9 /* TVShow.swift */,
+				0D8C0F7627F35B8200F480D9 /* Configuration.swift */,
+				0D8C0F8527F36E8700F480D9 /* Genre.swift */,
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		0D8C0F8A27F371CE00F480D9 /* Response Models */ = {
+			isa = PBXGroup;
+			children = (
+				0D8C0F8B27F371F000F480D9 /* TopRatedTVShowsResponse.swift */,
+			);
+			path = "Response Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D8C0F8C27F371F000F480D9 /* TopRatedTVShowsResponse.swift in Sources */,
 				0D8C0F6E27F3390D00F480D9 /* APIRoutes.swift in Sources */,
 				0D8C0F7727F35B8200F480D9 /* Configuration.swift in Sources */,
 				0D763F8D27F318080054ADAF /* ContentView.swift in Sources */,
