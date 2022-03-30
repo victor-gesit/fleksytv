@@ -20,9 +20,10 @@ struct TVShowsView: View {
                         .padding(.leading, 30)
                         .padding(.trailing, 30)
                         .padding(.bottom, 0)
+                        .padding(.top, 40)
                     Spacer()
                 }
-                    List {
+                    ScrollView {
                         VStack {
                             ForEach(TVShow.testTVShows, id: \.id) { tvShow in
                                 TVShowItemView()
@@ -34,6 +35,7 @@ struct TVShowsView: View {
                             
                         }
                     }
+                    .padding()
                     .refreshable{
                         print("Reloading...")
                     }
