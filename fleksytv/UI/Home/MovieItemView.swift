@@ -9,30 +9,30 @@ import SwiftUI
 
 struct MovieItemView: View {
     var body: some View {
-        HStack {
-            Image.from(.testImageCover)
-                .resizable()
-                .frame(width: 72, height: 96)
-                .cornerRadius(8)
-            VStack(alignment: .leading) {
-                Text("The Walking Dead")
-                    .padding(.top, 8)
-                Text("Drama")
-                Spacer()
-                HStack {
-                    yearView
-                    ratingView
+        VStack {
+            HStack {
+                Image.from(.testImageCover)
+                    .resizable()
+                    .frame(width: 72, height: 96)
+                    .cornerRadius(8)
+                VStack(alignment: .leading) {
+                    Text("The Walking Dead")
+                        .padding(.top, 8)
+                    Text("Drama")
+                    Spacer()
+                    HStack {
+                        yearView
+                        ratingView
+                    }
+                    .padding(.bottom, 8)
                 }
-                .padding(.bottom, 8)
+                Spacer()
             }
-            Spacer()
+            .frame(height: 100)
+            .padding(10)
+            .background(.red)
+            .cornerRadius(15)
         }
-        .padding()
-        .background(.red)
-        .cornerRadius(15)
-        .padding()
-        .frame(maxWidth: .infinity)
-        .frame(height: 100)
     }
     
     var yearView: some View {

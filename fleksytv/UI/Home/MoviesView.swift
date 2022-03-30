@@ -9,7 +9,33 @@ import SwiftUI
 
 struct MoviesView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Image.from(.logo)
+            HStack {
+                Text("Most Popular TV Shows")
+                    .font(Font.title)
+                    .padding(.leading, 30)
+                    .padding(.trailing, 30)
+                    .padding(.bottom, 0)
+                Spacer()
+            }
+                List {
+                    VStack {
+                        ForEach(TVShow.testTVShows, id: \.id) { tvShow in
+                            MovieItemView()
+                                .padding(.bottom, 10)
+                        }
+                    }
+                }
+                .listStyle(.plain)
+        }
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                Text("Hello")
+                    
+            }
+        }
     }
 }
 
