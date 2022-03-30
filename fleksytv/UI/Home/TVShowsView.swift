@@ -20,7 +20,7 @@ struct TVShowsView: View {
                         .padding(.leading, 30)
                         .padding(.trailing, 30)
                         .padding(.bottom, 0)
-                        .padding(.top, 40)
+                        .padding(.top, 20)
                     Spacer()
                 }
                     ScrollView {
@@ -40,6 +40,9 @@ struct TVShowsView: View {
                         print("Reloading...")
                     }
                     .listStyle(.plain)
+                HStack {
+                    
+                }
             }
             .fullScreenCover(isPresented: $isPresented, content: SimilarShowsSlidesView.init)
         }

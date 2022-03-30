@@ -17,7 +17,7 @@ struct TVShowDetailsView: View {
             Image.from(.testImageCover)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .frame(height: 400)
+                .frame(minHeight: 300)
                 .cornerRadius(10)
                 .clipped()
             Text("Halo")
@@ -28,25 +28,26 @@ struct TVShowDetailsView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
                     ForEach(genres, id: \.self) { genre in
-                        paddedText(genre)
+                        PaddedText(text: genre)
                     }
                 }
             }
             Divider()
             HStack {
-                paddedText("2022")
-                ratingView("2.9")
+                PaddedText(text: "2022")
+                RatingView(rating: "2.9")
             }
             ScrollView {
                 VStack(alignment: .leading) {
                     Text("Hello from the other side")
                         .font(Font.custom(from: .axiformaRegular, size: 12))
+                        .foregroundColor(Color.from(.fleksyWhite))
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .lineLimit(nil)
                 }.frame(maxWidth: .infinity)
-                    .padding(8)
-            }.frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(.blue)
+                    .padding(15)
+            }.frame(maxWidth: .infinity, minHeight: 100, maxHeight: .infinity)
+                .background(Color.from(.fleksyDarkTextBackground))
             .cornerRadius(18)
             .padding(.top, 20)
         }
@@ -55,35 +56,6 @@ struct TVShowDetailsView: View {
         .background(Color.from(.fleksyGray))
         .cornerRadius(30)
         .padding()
-    }
-    
-    func paddedText(_ text: String) -> some View {
-        return Text(text)
-            .font(Font.custom(from: .axiformaRegular, size: 12))
-            .foregroundColor(Color.from(.fleksyWhite))
-            .padding(4)
-            .padding(.leading, 6)
-            .padding(.trailing, 6)
-            .frame(height: 24)
-            .background(Color.from(.fleksyLightGray))
-            .cornerRadius(8)
-    }
-    
-    func ratingView(_ rating: String) -> some View {
-        return HStack(spacing: 2) {
-            Image.from(.star)
-                .resizable()
-                .frame(width: 16, height: 16)
-            Text(rating)
-                .font(Font.custom(from: .axiformaRegular, size: 12))
-                .foregroundColor(Color.from(.fleksyWhite))
-        }
-        .padding(4)
-        .padding(.leading, 6)
-        .padding(.trailing, 6)
-        .frame(height: 24)
-        .background(Color.from(.fleksyLightGray))
-        .cornerRadius(8)
     }
 }
 
