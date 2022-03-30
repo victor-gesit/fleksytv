@@ -41,9 +41,17 @@ class APIServer: APIServerProtocol {
         }
     }
     
-    func getImageURL(imagePath: String, quality: ImageQuality) -> String {
+    func getImageURL(imagePath: String, quality: ImageQuality, completion: @escaping (String) -> Void) {
+        guard let _ = Self.configuration else {
+            getConfiguration {configuration, error in
+                UserDefaults.standard.imageDBConfiguration = configuration
+                let route = APIRoute.loadPicture(imagePath, quality)
+                completion(route.description)
+            }
+            return
+        }
         let route = APIRoute.loadPicture(imagePath, quality)
-        return route.description
+        completion(route.description)
     }
     
     
