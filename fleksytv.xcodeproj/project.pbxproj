@@ -29,6 +29,7 @@
 		0D8C0FA527F482C600F480D9 /* TVShowItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C0FA427F482C600F480D9 /* TVShowItemView.swift */; };
 		0D90C36B27F48C5400E12ABF /* FleksyImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D90C36A27F48C5400E12ABF /* FleksyImage.swift */; };
 		0D90C37627F4C3D600E12ABF /* TVShowDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D90C37527F4C3D600E12ABF /* TVShowDetailsView.swift */; };
+		0DFA756A27F4E1DA001AD339 /* SimilarShowsSlidesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFA756927F4E1DA001AD339 /* SimilarShowsSlidesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		0D8C0FA427F482C600F480D9 /* TVShowItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowItemView.swift; sourceTree = "<group>"; };
 		0D90C36A27F48C5400E12ABF /* FleksyImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FleksyImage.swift; sourceTree = "<group>"; };
 		0D90C37527F4C3D600E12ABF /* TVShowDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowDetailsView.swift; sourceTree = "<group>"; };
+		0DFA756927F4E1DA001AD339 /* SimilarShowsSlidesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarShowsSlidesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -288,6 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				0D90C37527F4C3D600E12ABF /* TVShowDetailsView.swift */,
+				0DFA756927F4E1DA001AD339 /* SimilarShowsSlidesView.swift */,
 			);
 			path = "TVShow Detail";
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 				0D90C37627F4C3D600E12ABF /* TVShowDetailsView.swift in Sources */,
 				0D8C0F8627F36E8700F480D9 /* Genre.swift in Sources */,
 				0D8C0F9727F42B3000F480D9 /* APIServer.swift in Sources */,
+				0DFA756A27F4E1DA001AD339 /* SimilarShowsSlidesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,6 +12,7 @@ enum FleksyImage: String {
     case star
     case logo
     case testImageCover
+    case close
 }
 
 extension Image {

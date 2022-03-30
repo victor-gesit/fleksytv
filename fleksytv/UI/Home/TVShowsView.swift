@@ -38,7 +38,7 @@ struct TVShowsView: View {
                     }
                     .listStyle(.plain)
             }
-            .fullScreenCover(isPresented: $isPresented, content: TVShowDetailsView.init)
+            .fullScreenCover(isPresented: $isPresented, content: SimilarShowsSlidesView.init)
         }
         .background(.brown)
     }

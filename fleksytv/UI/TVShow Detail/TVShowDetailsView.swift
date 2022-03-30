@@ -30,16 +30,16 @@ struct TVShowDetailsView: View {
                 ratingView("2.9")
             }
             VStack {
-                TextEditor(text: .constant("HELLO FROM"))
+                TextEditor(text: .constant("Hello from the other side"))
                     .foregroundColor(.green)
-                    .padding(10)
+                    .padding(2)
             }
             .background(.blue)
             .cornerRadius(18)
             .padding(.top, 20)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .padding(30)
+        .padding(20)
         .background(.red)
         .cornerRadius(30)
         .padding()
