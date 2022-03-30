@@ -11,6 +11,7 @@ struct TVShowDetailsView: View {
     init() {
         UITextView.appearance().backgroundColor = .clear
     }
+    var genres = ["Action", "Comedy", "Sci-Fi", "Action1", "Comedy2", "Sci-Fi3"]
     var body: some View {
         VStack(alignment: .leading) {
             Image.from(.testImageCover)
@@ -20,20 +21,30 @@ struct TVShowDetailsView: View {
                 .cornerRadius(10)
                 .clipped()
             Text("Halo")
-            HStack {
-                paddedText("Action")
-                paddedText("Comedy")
-                paddedText("Sci-Fi")
+                .font(Font.custom(from: .axiformaSemibold, size: 16))
+                .padding(.top, 10)
+                .padding(.bottom, 10)
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack {
+                    ForEach(genres, id: \.self) { genre in
+                        paddedText(genre)
+                    }
+                }
             }
+            Divider()
             HStack {
                 paddedText("2022")
                 ratingView("2.9")
             }
-            VStack {
-                TextEditor(text: .constant("Hello from the other side"))
-                    .foregroundColor(.green)
-                    .padding(2)
-            }
+            ScrollView {
+                VStack(alignment: .leading) {
+                    Text("Hello from the other side")
+                        .font(Font.custom(from: .axiformaRegular, size: 12))
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .lineLimit(nil)
+                }.frame(maxWidth: .infinity)
+                    .padding(8)
+            }.frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(.blue)
             .cornerRadius(18)
             .padding(.top, 20)
@@ -47,9 +58,11 @@ struct TVShowDetailsView: View {
     
     func paddedText(_ text: String) -> some View {
         return Text(text)
+            .font(Font.custom(from: .axiformaRegular, size: 12))
             .padding(4)
             .padding(.leading, 6)
             .padding(.trailing, 6)
+            .frame(height: 24)
             .background(.gray)
             .cornerRadius(8)
     }
@@ -64,6 +77,7 @@ struct TVShowDetailsView: View {
         .padding(4)
         .padding(.leading, 6)
         .padding(.trailing, 6)
+        .frame(height: 24)
         .background(.gray)
         .cornerRadius(8)
     }

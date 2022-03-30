@@ -15,7 +15,7 @@ struct TVShowsView: View {
                 Image.from(.logo)
                 HStack {
                     Text("Most Popular TV Shows")
-                        .font(Font.custom(from: .axiformaSemibold, size: 26))
+                        .font(Font.custom(from: .axiformaSemibold, size: 22))
                         .padding(.leading, 30)
                         .padding(.trailing, 30)
                         .padding(.bottom, 0)

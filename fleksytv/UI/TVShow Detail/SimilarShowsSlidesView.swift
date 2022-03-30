@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SimilarShowsSlidesView: View {
     @Environment(\.presentationMode) var presentationMode
+    @Environment(\.colorScheme) var colorScheme
     var body: some View {
         VStack {
             HStack {
@@ -17,7 +18,7 @@ struct SimilarShowsSlidesView: View {
                     .renderingMode(.template)
                     .resizable()
                     .frame(width: 20, height: 20)
-                    .foregroundColor(.white)
+                    .foregroundColor(colorScheme == .dark ? .white : .black)
                     .padding(.trailing, 20)
                     .padding(10)
                     .onTapGesture {

@@ -22,8 +22,11 @@ struct TVShowItemView: View {
                     .frame(width: 72, height: 96)
                 VStack(alignment: .leading) {
                     Text("The Walking Dead")
+                        .font(Font.custom(from: .axiformaSemibold, size: 16))
                         .padding(.top, 8)
-                    Text("Drama")
+                        .padding(.bottom, 0.5)
+                    Text("Drama, Adventure, Sci-Fi")
+                        .font(Font.custom(from: .axiformaRegular, size: 12))
                     Spacer()
                     HStack {
                         yearView("2022")
@@ -43,9 +46,11 @@ struct TVShowItemView: View {
     
     func yearView(_ year: String) -> some View {
         return Text(year)
+            .font(Font.custom(from: .axiformaMedium, size: 12))
             .padding(4)
             .padding(.leading, 6)
             .padding(.trailing, 6)
+            .frame(height: 24)
             .background(.gray)
             .cornerRadius(8)
     }
@@ -56,10 +61,12 @@ struct TVShowItemView: View {
                 .resizable()
                 .frame(width: 16, height: 16)
             Text(rating)
+                .font(Font.custom(from: .axiformaMedium, size: 12))
         }
         .padding(4)
         .padding(.leading, 6)
         .padding(.trailing, 6)
+        .frame(height: 24)
         .background(.gray)
         .cornerRadius(8)
     }
