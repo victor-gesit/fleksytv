@@ -18,15 +18,18 @@ struct TVShowItemView: View {
                         .cornerRadius(8)
                 }, placeholder: {
                     ProgressView()
+                        .tint(.white)
                 })
                     .frame(width: 72, height: 96)
                 VStack(alignment: .leading) {
                     Text("The Walking Dead")
                         .font(Font.custom(from: .axiformaSemibold, size: 16))
+                        .foregroundColor(Color.from(.fleksyWhite))
                         .padding(.top, 8)
                         .padding(.bottom, 0.5)
                     Text("Drama, Adventure, Sci-Fi")
                         .font(Font.custom(from: .axiformaRegular, size: 12))
+                        .foregroundColor(Color.from(.fleksyLightFont))
                     Spacer()
                     HStack {
                         yearView("2022")
@@ -38,20 +41,20 @@ struct TVShowItemView: View {
             }
             .frame(height: 100)
             .padding(10)
-            .background(.red)
+            .background(Color.from(.fleksyGray))
             .cornerRadius(15)
-            .listRowBackground(Color.green)
         }
     }
     
     func yearView(_ year: String) -> some View {
         return Text(year)
             .font(Font.custom(from: .axiformaMedium, size: 12))
+            .foregroundColor(Color.from(.fleksyWhite))
             .padding(4)
             .padding(.leading, 6)
             .padding(.trailing, 6)
             .frame(height: 24)
-            .background(.gray)
+            .background(Color.from(.fleksyLightGray))
             .cornerRadius(8)
     }
     
@@ -62,12 +65,13 @@ struct TVShowItemView: View {
                 .frame(width: 16, height: 16)
             Text(rating)
                 .font(Font.custom(from: .axiformaMedium, size: 12))
+                .foregroundColor(Color.from(.fleksyWhite))
         }
         .padding(4)
         .padding(.leading, 6)
         .padding(.trailing, 6)
         .frame(height: 24)
-        .background(.gray)
+        .background(Color.from(.fleksyLightGray))
         .cornerRadius(8)
     }
 }

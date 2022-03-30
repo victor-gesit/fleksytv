@@ -22,6 +22,7 @@ struct TVShowDetailsView: View {
                 .clipped()
             Text("Halo")
                 .font(Font.custom(from: .axiformaSemibold, size: 16))
+                .foregroundColor(Color.from(.fleksyWhite))
                 .padding(.top, 10)
                 .padding(.bottom, 10)
             ScrollView(.horizontal, showsIndicators: false) {
@@ -51,7 +52,7 @@ struct TVShowDetailsView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .padding(20)
-        .background(.red)
+        .background(Color.from(.fleksyGray))
         .cornerRadius(30)
         .padding()
     }
@@ -59,11 +60,12 @@ struct TVShowDetailsView: View {
     func paddedText(_ text: String) -> some View {
         return Text(text)
             .font(Font.custom(from: .axiformaRegular, size: 12))
+            .foregroundColor(Color.from(.fleksyWhite))
             .padding(4)
             .padding(.leading, 6)
             .padding(.trailing, 6)
             .frame(height: 24)
-            .background(.gray)
+            .background(Color.from(.fleksyLightGray))
             .cornerRadius(8)
     }
     
@@ -73,12 +75,14 @@ struct TVShowDetailsView: View {
                 .resizable()
                 .frame(width: 16, height: 16)
             Text(rating)
+                .font(Font.custom(from: .axiformaRegular, size: 12))
+                .foregroundColor(Color.from(.fleksyWhite))
         }
         .padding(4)
         .padding(.leading, 6)
         .padding(.trailing, 6)
         .frame(height: 24)
-        .background(.gray)
+        .background(Color.from(.fleksyLightGray))
         .cornerRadius(8)
     }
 }

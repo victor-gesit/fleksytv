@@ -40,6 +40,7 @@
 		0DFA758F27F4E9C1001AD339 /* Kastelov - Axiforma Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0DFA757B27F4E9C1001AD339 /* Kastelov - Axiforma Medium.otf */; };
 		0DFA759227F4E9C1001AD339 /* Kastelov - Axiforma Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0DFA757E27F4E9C1001AD339 /* Kastelov - Axiforma Book.otf */; };
 		0DFA759627F4ED73001AD339 /* Font+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFA759527F4ED73001AD339 /* Font+Extensions.swift */; };
+		0DFA759927F4FCFE001AD339 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFA759827F4FCFE001AD339 /* Color+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		0DFA757E27F4E9C1001AD339 /* Kastelov - Axiforma Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kastelov - Axiforma Book.otf"; sourceTree = "<group>"; };
 		0DFA759427F4EC44001AD339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0DFA759527F4ED73001AD339 /* Font+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extensions.swift"; sourceTree = "<group>"; };
+		0DFA759827F4FCFE001AD339 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +263,7 @@
 			children = (
 				0D8C0F9B27F4550500F480D9 /* String+Extensions.swift */,
 				0DFA759527F4ED73001AD339 /* Font+Extensions.swift */,
+				0DFA759827F4FCFE001AD339 /* Color+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -493,6 +496,7 @@
 				0D8C0FA327F4819800F480D9 /* TVShowsView.swift in Sources */,
 				0D90C36B27F48C5400E12ABF /* FleksyImage.swift in Sources */,
 				0D90C37627F4C3D600E12ABF /* TVShowDetailsView.swift in Sources */,
+				0DFA759927F4FCFE001AD339 /* Color+Extensions.swift in Sources */,
 				0DFA759627F4ED73001AD339 /* Font+Extensions.swift in Sources */,
 				0D8C0F8627F36E8700F480D9 /* Genre.swift in Sources */,
 				0D8C0F9727F42B3000F480D9 /* APIServer.swift in Sources */,

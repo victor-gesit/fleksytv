@@ -16,6 +16,7 @@ struct TVShowsView: View {
                 HStack {
                     Text("Most Popular TV Shows")
                         .font(Font.custom(from: .axiformaSemibold, size: 22))
+                        .foregroundColor(Color.from(.fleksyWhite))
                         .padding(.leading, 30)
                         .padding(.trailing, 30)
                         .padding(.bottom, 0)
@@ -40,7 +41,7 @@ struct TVShowsView: View {
             }
             .fullScreenCover(isPresented: $isPresented, content: SimilarShowsSlidesView.init)
         }
-        .background(.brown)
+        .background(Color.from(.fleksyBackground))
     }
 }
 
