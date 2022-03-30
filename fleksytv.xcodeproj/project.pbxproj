@@ -24,6 +24,7 @@
 		0D8C0F9227F428C100F480D9 /* UIAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C0F9127F428C100F480D9 /* UIAppDelegate.swift */; };
 		0D8C0F9527F42A9B00F480D9 /* APIServerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C0F9427F42A9B00F480D9 /* APIServerProtocol.swift */; };
 		0D8C0F9727F42B3000F480D9 /* APIServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C0F9627F42B3000F480D9 /* APIServer.swift */; };
+		0D8C0F9C27F4550500F480D9 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C0F9B27F4550500F480D9 /* String+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		0D8C0F9127F428C100F480D9 /* UIAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAppDelegate.swift; sourceTree = "<group>"; };
 		0D8C0F9427F42A9B00F480D9 /* APIServerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServerProtocol.swift; sourceTree = "<group>"; };
 		0D8C0F9627F42B3000F480D9 /* APIServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServer.swift; sourceTree = "<group>"; };
+		0D8C0F9B27F4550500F480D9 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 		0D763F8927F318080054ADAF /* fleksytv */ = {
 			isa = PBXGroup;
 			children = (
+				0D8C0F9927F454F500F480D9 /* Utils */,
 				0D8C0F6C27F3390300F480D9 /* Networking */,
 				0D763F8A27F318080054ADAF /* fleksytvApp.swift */,
 				0D763F8C27F318080054ADAF /* ContentView.swift */,
@@ -211,6 +214,22 @@
 				0D8C0F9627F42B3000F480D9 /* APIServer.swift */,
 			);
 			path = Server;
+			sourceTree = "<group>";
+		};
+		0D8C0F9927F454F500F480D9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0D8C0F9A27F454FB00F480D9 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0D8C0F9A27F454FB00F480D9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0D8C0F9B27F4550500F480D9 /* String+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,6 +367,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D8C0F9527F42A9B00F480D9 /* APIServerProtocol.swift in Sources */,
+				0D8C0F9C27F4550500F480D9 /* String+Extensions.swift in Sources */,
 				0D8C0F8C27F371F000F480D9 /* TopRatedTVShowsResponse.swift in Sources */,
 				0D8C0F6E27F3390D00F480D9 /* APIRoutes.swift in Sources */,
 				0D8C0F9227F428C100F480D9 /* UIAppDelegate.swift in Sources */,
