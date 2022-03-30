@@ -8,39 +8,42 @@
 import Foundation
 
 class APIServer: APIServerProtocol {
-    func getTopRatedTVShows(completion: @escaping ([TVShow]?, AppError?) -> Void) {
+    private static let configuration = UserDefaults.standard.imageDBConfiguration
+    
+    func getTopRatedTVShows(completion: @escaping ([TVShow]?, Error?) -> Void) {
         makeAPICall(route: .topRatedTVShows, method: .get, authMethod: .authenticated, responseClass: TopRatedTVShowsResponse.self) { result, error in
-            let res = result?.results
-            print("Shows ", res)
+            let tvShows = result?.results
+            completion(tvShows, error)
         }
     }
     
-    func getTvShowDetail(completion: @escaping (TVShow, AppError?) -> Void) {
-        makeAPICall(route: .tvShowDetail("20477"), method: .get, authMethod: .authenticated, responseClass: TVShow.self) { res, error in
-            print("Show Details ", res)
+    func getTvShowDetail(tvId: String, completion: @escaping (TVShow?, Error?) -> Void) {
+        makeAPICall(route: .tvShowDetail(tvId), method: .get, authMethod: .authenticated, responseClass: TVShow.self) { tvShow, error in
+            completion(tvShow, error)
         }
     }
     
-    func getSimilarTVShows(tvId: String, completion: @escaping ([TVShow]?, AppError?) -> Void) {
-        makeAPICall(route: .similarTVShows("20477"), method: .get, authMethod: .authenticated, responseClass: TopRatedTVShowsResponse.self) { res, error in
-            print("Similar Shows ", res)
+    func getSimilarTVShows(tvId: String, completion: @escaping ([TVShow]?, Error?) -> Void) {
+        makeAPICall(route: .similarTVShows(tvId), method: .get, authMethod: .authenticated, responseClass: TopRatedTVShowsResponse.self) { res, error in
+            completion(res?.results, error)
         }
     }
     
-    func getGenres(completion: @escaping ([Genre], AppError?) -> Void) {
+    func getGenres(completion: @escaping ([Genre]?, Error?) -> Void) {
         makeAPICall(route: .genres, method: .get, authMethod: .authenticated, responseClass: GetGenresResponse.self) { genres, error in
-            print("Genres ", genres)
+            completion(genres?.genres, error)
         }
     }
     
-    func getConfiguration(completion: @escaping (Configuration, AppError?) -> Void) {
-        makeAPICall(route: .configuration, method: .get, authMethod: .authenticated, responseClass: Configuration.self) { res, error in
-            print("Configuration ", res)
+    func getConfiguration(completion: @escaping (Configuration?, Error?) -> Void) {
+        makeAPICall(route: .configuration, method: .get, authMethod: .authenticated, responseClass: Configuration.self) { configuration, error in
+            completion(configuration, error)
         }
     }
     
-    func loadPicture(imagePath: String, quality: ImageQuality) {
-        //
+    func getImageURL(imagePath: String, quality: ImageQuality) -> String {
+        let route = APIRoute.loadPicture(imagePath, quality)
+        return route.description
     }
     
     
