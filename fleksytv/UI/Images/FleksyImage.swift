@@ -15,7 +15,7 @@ enum FleksyImage: String {
 }
 
 extension Image {
-    static func imageFrom(_ fleksyImage: FleksyImage) -> Image {
+    static func from(_ fleksyImage: FleksyImage) -> Image {
         return Image(fleksyImage.rawValue)
     }
 }
