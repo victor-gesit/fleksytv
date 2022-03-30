@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum APIRoutes {
+enum APIRoute {
     case topRatedTVShows
     case tvShowDetail(String)
     case similarTVShows(String)
@@ -16,7 +16,7 @@ enum APIRoutes {
     case loadPicture(String, ImageQuality)
 }
 
-extension APIRoutes: CustomStringConvertible {
+extension APIRoute: CustomStringConvertible {
     var description: String {
         switch self {
         case .topRatedTVShows: return Constants.BaseURL + "tv/top_rated"
@@ -45,4 +45,17 @@ enum ImageQuality: String {
 
 enum AppError: Error {
     case missingConfigCache
+    case noInternet
+}
+
+enum Method: String {
+    case `get` = "GET"
+    case post = "POST"
+    case put = "PUT"
+    case `delete` = "DELETE"
+}
+
+enum AuthMethod {
+    case authenticated
+    case unauthenticated
 }
