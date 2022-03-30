@@ -50,6 +50,13 @@
             ReferencedContainer = "container:fleksytv.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "api-key"
+            value = "37b9f6c2d04ec865d2005e5ca809e741"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
