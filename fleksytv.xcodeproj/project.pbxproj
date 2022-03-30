@@ -25,6 +25,8 @@
 		0D8C0F9527F42A9B00F480D9 /* APIServerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C0F9427F42A9B00F480D9 /* APIServerProtocol.swift */; };
 		0D8C0F9727F42B3000F480D9 /* APIServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C0F9627F42B3000F480D9 /* APIServer.swift */; };
 		0D8C0F9C27F4550500F480D9 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C0F9B27F4550500F480D9 /* String+Extensions.swift */; };
+		0D8C0FA327F4819800F480D9 /* MoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C0FA227F4819800F480D9 /* MoviesView.swift */; };
+		0D8C0FA527F482C600F480D9 /* MovieItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C0FA427F482C600F480D9 /* MovieItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D763F8727F318080054ADAF /* fleksytv dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fleksytv dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D763F8727F318080054ADAF /* fleksytv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fleksytv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D763F8A27F318080054ADAF /* fleksytvApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fleksytvApp.swift; sourceTree = "<group>"; };
 		0D763F8C27F318080054ADAF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0D763F8E27F318090054ADAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,6 +68,8 @@
 		0D8C0F9427F42A9B00F480D9 /* APIServerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServerProtocol.swift; sourceTree = "<group>"; };
 		0D8C0F9627F42B3000F480D9 /* APIServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServer.swift; sourceTree = "<group>"; };
 		0D8C0F9B27F4550500F480D9 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		0D8C0FA227F4819800F480D9 /* MoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesView.swift; sourceTree = "<group>"; };
+		0D8C0FA427F482C600F480D9 /* MovieItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +110,7 @@
 		0D763F8827F318080054ADAF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0D763F8727F318080054ADAF /* fleksytv dev.app */,
+				0D763F8727F318080054ADAF /* fleksytv.app */,
 				0D763F9727F318090054ADAF /* fleksytvTests.xctest */,
 				0D763FA127F318090054ADAF /* fleksytvUITests.xctest */,
 			);
@@ -116,6 +120,7 @@
 		0D763F8927F318080054ADAF /* fleksytv */ = {
 			isa = PBXGroup;
 			children = (
+				0D8C0F9F27F45A2600F480D9 /* UI */,
 				0D8C0F9927F454F500F480D9 /* Utils */,
 				0D8C0F6C27F3390300F480D9 /* Networking */,
 				0D763F8A27F318080054ADAF /* fleksytvApp.swift */,
@@ -232,6 +237,31 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		0D8C0F9F27F45A2600F480D9 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0D8C0FA127F4815F00F480D9 /* Home */,
+				0D8C0FA027F47A2E00F480D9 /* Util Pages */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		0D8C0FA027F47A2E00F480D9 /* Util Pages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Util Pages";
+			sourceTree = "<group>";
+		};
+		0D8C0FA127F4815F00F480D9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0D8C0FA227F4819800F480D9 /* MoviesView.swift */,
+				0D8C0FA427F482C600F480D9 /* MovieItemView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -251,7 +281,7 @@
 			packageProductDependencies = (
 			);
 			productName = fleksytv;
-			productReference = 0D763F8727F318080054ADAF /* fleksytv dev.app */;
+			productReference = 0D763F8727F318080054ADAF /* fleksytv.app */;
 			productType = "com.apple.product-type.application";
 		};
 		0D763F9627F318090054ADAF /* fleksytvTests */ = {
@@ -369,6 +399,7 @@
 				0D8C0F9527F42A9B00F480D9 /* APIServerProtocol.swift in Sources */,
 				0D8C0F9C27F4550500F480D9 /* String+Extensions.swift in Sources */,
 				0D8C0F8C27F371F000F480D9 /* TopRatedTVShowsResponse.swift in Sources */,
+				0D8C0FA527F482C600F480D9 /* MovieItemView.swift in Sources */,
 				0D8C0F6E27F3390D00F480D9 /* APIRoutes.swift in Sources */,
 				0D8C0F9227F428C100F480D9 /* UIAppDelegate.swift in Sources */,
 				0D8C0F7727F35B8200F480D9 /* Configuration.swift in Sources */,
@@ -377,6 +408,7 @@
 				0D8C0F8327F3627300F480D9 /* UserDefaults+Extension.swift in Sources */,
 				0D8C0F7527F352F900F480D9 /* TVShow.swift in Sources */,
 				0D763F8B27F318080054ADAF /* fleksytvApp.swift in Sources */,
+				0D8C0FA327F4819800F480D9 /* MoviesView.swift in Sources */,
 				0D8C0F8627F36E8700F480D9 /* Genre.swift in Sources */,
 				0D8C0F9727F42B3000F480D9 /* APIServer.swift in Sources */,
 			);
@@ -545,6 +577,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -554,7 +587,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gesit.fleksytv-dev";
-				PRODUCT_NAME = "$(TARGET_NAME) dev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -575,6 +608,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
