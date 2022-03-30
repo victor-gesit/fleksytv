@@ -8,9 +8,9 @@
 import Foundation
 
 enum APIRoute {
-    case topRatedTVShows
+    case topRatedTVShows(Int)
     case tvShowDetail(String)
-    case similarTVShows(String)
+    case similarTVShows(String, Int)
     case genres
     case configuration
     case loadPicture(String, ImageQuality)
@@ -19,9 +19,11 @@ enum APIRoute {
 extension APIRoute: CustomStringConvertible {
     var description: String {
         switch self {
-        case .topRatedTVShows: return Constants.BaseURL + "tv/top_rated"
+        case .topRatedTVShows(let pageNumber):
+            return Constants.BaseURL + "tv/top_rated" + "?page=\(pageNumber)"
         case .tvShowDetail(let tvId): return Constants.BaseURL + "tv/\(tvId)"
-        case .similarTVShows(let tvId): return Constants.BaseURL + "/tv/\(tvId)/similar"
+        case .similarTVShows(let tvId, let pageNumber):
+            return Constants.BaseURL + "/tv/\(tvId)/similar" + "?page=\(pageNumber)"
         case .genres: return Constants.BaseURL + "genre/movie/list"
         case .configuration: return Constants.BaseURL + "configuration"
         case .loadPicture(let path, let quality):

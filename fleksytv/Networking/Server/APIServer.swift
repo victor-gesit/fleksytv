@@ -10,8 +10,8 @@ import Foundation
 class APIServer: APIServerProtocol {
     private static let configuration = UserDefaults.standard.imageDBConfiguration
     
-    func getTopRatedTVShows(completion: @escaping ([TVShow]?, Error?) -> Void) {
-        makeAPICall(route: .topRatedTVShows, method: .get, authMethod: .authenticated, responseClass: TopRatedTVShowsResponse.self) { result, error in
+    func getTopRatedTVShows(pageNumber: Int = 1, completion: @escaping ([TVShow]?, Error?) -> Void) {
+        makeAPICall(route: .topRatedTVShows(pageNumber), method: .get, authMethod: .authenticated, responseClass: TopRatedTVShowsResponse.self) { result, error in
             let tvShows = result?.results
             completion(tvShows, error)
         }
@@ -23,8 +23,8 @@ class APIServer: APIServerProtocol {
         }
     }
     
-    func getSimilarTVShows(tvId: String, completion: @escaping ([TVShow]?, Error?) -> Void) {
-        makeAPICall(route: .similarTVShows(tvId), method: .get, authMethod: .authenticated, responseClass: TopRatedTVShowsResponse.self) { res, error in
+    func getSimilarTVShows(tvId: String, pageNumber: Int = 1, completion: @escaping ([TVShow]?, Error?) -> Void) {
+        makeAPICall(route: .similarTVShows(tvId, pageNumber), method: .get, authMethod: .authenticated, responseClass: TopRatedTVShowsResponse.self) { res, error in
             completion(res?.results, error)
         }
     }
@@ -73,8 +73,12 @@ class APIServer: APIServerProtocol {
         var urlString = route.description
         switch authMethod {
         case .authenticated:
-            guard let apiKey = ProcessInfo.processInfo.environment["api-key"] else { return nil }
-            urlString += "?api_key=\(apiKey)"
+            guard let apiKey = ProcessInfo.processInfo.environment[.ENV.apiKey] else { return nil }
+            if urlString.containsQuery {
+                urlString += "&api_key=\(apiKey)"
+            } else {
+                urlString += "?api_key=\(apiKey)"
+            }
         case .unauthenticated:
             break;
             // Do nothing
