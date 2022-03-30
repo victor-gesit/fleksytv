@@ -30,6 +30,16 @@
 		0D90C36B27F48C5400E12ABF /* FleksyImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D90C36A27F48C5400E12ABF /* FleksyImage.swift */; };
 		0D90C37627F4C3D600E12ABF /* TVShowDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D90C37527F4C3D600E12ABF /* TVShowDetailsView.swift */; };
 		0DFA756A27F4E1DA001AD339 /* SimilarShowsSlidesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFA756927F4E1DA001AD339 /* SimilarShowsSlidesView.swift */; };
+		0DFA758027F4E9C1001AD339 /* Kastelov - Axiforma Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0DFA756C27F4E9C0001AD339 /* Kastelov - Axiforma Bold.otf */; };
+		0DFA758227F4E9C1001AD339 /* Kastelov - Axiforma Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0DFA756E27F4E9C0001AD339 /* Kastelov - Axiforma Regular.otf */; };
+		0DFA758327F4E9C1001AD339 /* Kastelov - Axiforma Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0DFA756F27F4E9C0001AD339 /* Kastelov - Axiforma Light.otf */; };
+		0DFA758627F4E9C1001AD339 /* Kastelov - Axiforma Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0DFA757227F4E9C0001AD339 /* Kastelov - Axiforma Thin.otf */; };
+		0DFA758827F4E9C1001AD339 /* Kastelov - Axiforma ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0DFA757427F4E9C0001AD339 /* Kastelov - Axiforma ExtraBold.otf */; };
+		0DFA758B27F4E9C1001AD339 /* Kastelov - Axiforma SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0DFA757727F4E9C1001AD339 /* Kastelov - Axiforma SemiBold.otf */; };
+		0DFA758E27F4E9C1001AD339 /* Kastelov - Axiforma Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0DFA757A27F4E9C1001AD339 /* Kastelov - Axiforma Heavy.otf */; };
+		0DFA758F27F4E9C1001AD339 /* Kastelov - Axiforma Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0DFA757B27F4E9C1001AD339 /* Kastelov - Axiforma Medium.otf */; };
+		0DFA759227F4E9C1001AD339 /* Kastelov - Axiforma Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0DFA757E27F4E9C1001AD339 /* Kastelov - Axiforma Book.otf */; };
+		0DFA759627F4ED73001AD339 /* Font+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFA759527F4ED73001AD339 /* Font+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +86,17 @@
 		0D90C36A27F48C5400E12ABF /* FleksyImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FleksyImage.swift; sourceTree = "<group>"; };
 		0D90C37527F4C3D600E12ABF /* TVShowDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowDetailsView.swift; sourceTree = "<group>"; };
 		0DFA756927F4E1DA001AD339 /* SimilarShowsSlidesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarShowsSlidesView.swift; sourceTree = "<group>"; };
+		0DFA756C27F4E9C0001AD339 /* Kastelov - Axiforma Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kastelov - Axiforma Bold.otf"; sourceTree = "<group>"; };
+		0DFA756E27F4E9C0001AD339 /* Kastelov - Axiforma Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kastelov - Axiforma Regular.otf"; sourceTree = "<group>"; };
+		0DFA756F27F4E9C0001AD339 /* Kastelov - Axiforma Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kastelov - Axiforma Light.otf"; sourceTree = "<group>"; };
+		0DFA757227F4E9C0001AD339 /* Kastelov - Axiforma Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kastelov - Axiforma Thin.otf"; sourceTree = "<group>"; };
+		0DFA757427F4E9C0001AD339 /* Kastelov - Axiforma ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kastelov - Axiforma ExtraBold.otf"; sourceTree = "<group>"; };
+		0DFA757727F4E9C1001AD339 /* Kastelov - Axiforma SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kastelov - Axiforma SemiBold.otf"; sourceTree = "<group>"; };
+		0DFA757A27F4E9C1001AD339 /* Kastelov - Axiforma Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kastelov - Axiforma Heavy.otf"; sourceTree = "<group>"; };
+		0DFA757B27F4E9C1001AD339 /* Kastelov - Axiforma Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kastelov - Axiforma Medium.otf"; sourceTree = "<group>"; };
+		0DFA757E27F4E9C1001AD339 /* Kastelov - Axiforma Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kastelov - Axiforma Book.otf"; sourceTree = "<group>"; };
+		0DFA759427F4EC44001AD339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0DFA759527F4ED73001AD339 /* Font+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +147,7 @@
 		0D763F8927F318080054ADAF /* fleksytv */ = {
 			isa = PBXGroup;
 			children = (
+				0DFA759427F4EC44001AD339 /* Info.plist */,
 				0D90C36C27F48E5600E12ABF /* Resources */,
 				0D8C0F9F27F45A2600F480D9 /* UI */,
 				0D8C0F9927F454F500F480D9 /* Utils */,
@@ -238,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				0D8C0F9B27F4550500F480D9 /* String+Extensions.swift */,
+				0DFA759527F4ED73001AD339 /* Font+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -280,6 +303,7 @@
 		0D90C36C27F48E5600E12ABF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0DFA756B27F4E982001AD339 /* Fonts */,
 				0D763F8E27F318090054ADAF /* Assets.xcassets */,
 				0D8C0F9127F428C100F480D9 /* UIAppDelegate.swift */,
 			);
@@ -293,6 +317,22 @@
 				0DFA756927F4E1DA001AD339 /* SimilarShowsSlidesView.swift */,
 			);
 			path = "TVShow Detail";
+			sourceTree = "<group>";
+		};
+		0DFA756B27F4E982001AD339 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0DFA756C27F4E9C0001AD339 /* Kastelov - Axiforma Bold.otf */,
+				0DFA757E27F4E9C1001AD339 /* Kastelov - Axiforma Book.otf */,
+				0DFA757427F4E9C0001AD339 /* Kastelov - Axiforma ExtraBold.otf */,
+				0DFA757A27F4E9C1001AD339 /* Kastelov - Axiforma Heavy.otf */,
+				0DFA756F27F4E9C0001AD339 /* Kastelov - Axiforma Light.otf */,
+				0DFA757B27F4E9C1001AD339 /* Kastelov - Axiforma Medium.otf */,
+				0DFA756E27F4E9C0001AD339 /* Kastelov - Axiforma Regular.otf */,
+				0DFA757727F4E9C1001AD339 /* Kastelov - Axiforma SemiBold.otf */,
+				0DFA757227F4E9C0001AD339 /* Kastelov - Axiforma Thin.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -404,7 +444,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D763F9227F318090054ADAF /* Preview Assets.xcassets in Resources */,
+				0DFA758B27F4E9C1001AD339 /* Kastelov - Axiforma SemiBold.otf in Resources */,
+				0DFA758F27F4E9C1001AD339 /* Kastelov - Axiforma Medium.otf in Resources */,
+				0DFA758327F4E9C1001AD339 /* Kastelov - Axiforma Light.otf in Resources */,
 				0D763F8F27F318090054ADAF /* Assets.xcassets in Resources */,
+				0DFA758827F4E9C1001AD339 /* Kastelov - Axiforma ExtraBold.otf in Resources */,
+				0DFA758227F4E9C1001AD339 /* Kastelov - Axiforma Regular.otf in Resources */,
+				0DFA759227F4E9C1001AD339 /* Kastelov - Axiforma Book.otf in Resources */,
+				0DFA758027F4E9C1001AD339 /* Kastelov - Axiforma Bold.otf in Resources */,
+				0DFA758627F4E9C1001AD339 /* Kastelov - Axiforma Thin.otf in Resources */,
+				0DFA758E27F4E9C1001AD339 /* Kastelov - Axiforma Heavy.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +493,7 @@
 				0D8C0FA327F4819800F480D9 /* TVShowsView.swift in Sources */,
 				0D90C36B27F48C5400E12ABF /* FleksyImage.swift in Sources */,
 				0D90C37627F4C3D600E12ABF /* TVShowDetailsView.swift in Sources */,
+				0DFA759627F4ED73001AD339 /* Font+Extensions.swift in Sources */,
 				0D8C0F8627F36E8700F480D9 /* Genre.swift in Sources */,
 				0D8C0F9727F42B3000F480D9 /* APIServer.swift in Sources */,
 				0DFA756A27F4E1DA001AD339 /* SimilarShowsSlidesView.swift in Sources */,
@@ -610,6 +660,7 @@
 				DEVELOPMENT_TEAM = 4EG6Z5662E;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = fleksytv/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -641,6 +692,7 @@
 				DEVELOPMENT_TEAM = 4EG6Z5662E;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = fleksytv/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
