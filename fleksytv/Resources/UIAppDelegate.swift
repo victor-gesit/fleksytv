@@ -13,7 +13,11 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         
         // Fetch The Movie DB Genres and Configuration
         APIServer().getGenres { genres, error in
-            UserDefaults.standard.allGenres = genres
+            var allGenres: [String: Genre] = [:]
+            genres?.forEach({ genre in
+                allGenres["\(genre.id)"] = genre
+            })
+            UserDefaults.standard.allGenres = allGenres
         }
         
         APIServer().getConfiguration { configuration, error in

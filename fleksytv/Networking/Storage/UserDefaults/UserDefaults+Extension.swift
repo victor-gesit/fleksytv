@@ -31,10 +31,10 @@ extension UserDefaults {
         }
     }
     
-    var allGenres: [Genre]? {
+    var allGenres: [String: Genre]? {
         get {
             if let data = object(forKey: Keys.allGenres.rawValue) as? Data {
-                return try? JSONDecoder().decode([Genre].self, from: data)
+                return try? JSONDecoder().decode([String: Genre].self, from: data)
             }
             return nil
         }

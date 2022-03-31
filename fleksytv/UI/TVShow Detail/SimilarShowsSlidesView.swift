@@ -30,6 +30,9 @@ struct SimilarShowsSlidesView: View {
                 }
             }
             .tabViewStyle(.page)
+            Text("Swipe for similar shows")
+                .font(Font.custom(from: .axiformaMedium, size: 12))
+                .foregroundColor(Color.from(.fleksyLightFont))
         }
         .background(Color.from(.fleksyBackground))
     }

@@ -14,12 +14,22 @@ struct TVShowDetailsView: View {
     var genres = ["Action", "Comedy", "Sci-Fi", "Action1", "Comedy2", "Sci-Fi3"]
     var body: some View {
         VStack(alignment: .leading) {
-            Image.from(.testImageCover)
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(minHeight: 300)
-                .cornerRadius(10)
-                .clipped()
+            VStack(alignment: .center) {
+                AsyncImage(url: URL(string: "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/movie-poster-template-design-3fde07497ef159f8ba0617dee83d982e_screen.jpg?ts=1636997626"), content: { image in
+                    image
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(minHeight: 300)
+                        .cornerRadius(10)
+                        .clipped()
+                }, placeholder: {
+                    ProgressView()
+                        .frame(alignment: .center)
+                        .tint(.white)
+                })
+                    .frame(minHeight: 300)
+            }
+            .frame(maxWidth: .infinity)
             Text("Halo")
                 .font(Font.custom(from: .axiformaSemibold, size: 16))
                 .foregroundColor(Color.from(.fleksyWhite))
@@ -48,8 +58,8 @@ struct TVShowDetailsView: View {
                     .padding(15)
             }.frame(maxWidth: .infinity, minHeight: 100, maxHeight: .infinity)
                 .background(Color.from(.fleksyDarkTextBackground))
-            .cornerRadius(18)
-            .padding(.top, 20)
+                .cornerRadius(18)
+                .padding(.top, 20)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .padding(20)
