@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import CachedAsyncImage
 
 struct TVShowItemView: View {
+    @State var tvShow: TVShow
     var body: some View {
         VStack {
             HStack {
-                AsyncImage(url: URL(string: "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/movie-poster-template-design-3fde07497ef159f8ba0617dee83d982e_screen.jpg?ts=1636997626"), content: { image in
+                CachedAsyncImage(url: tvShow.posterPath.safelyUnwrapped.imageURLWith(.original), content: { image in
                     image
                         .resizable()
                         .frame(width: 72, height: 96)
@@ -22,18 +24,18 @@ struct TVShowItemView: View {
                 })
                     .frame(width: 72, height: 96)
                 VStack(alignment: .leading) {
-                    Text("The Walking Dead")
+                    Text(tvShow.name.safelyUnwrapped)
                         .font(Font.custom(from: .axiformaSemibold, size: 16))
                         .foregroundColor(Color.from(.fleksyWhite))
                         .padding(.top, 8)
                         .padding(.bottom, 0.5)
-                    Text("Drama, Adventure, Sci-Fi")
+                    Text(tvShow.genres.joined(separator: ", "))
                         .font(Font.custom(from: .axiformaRegular, size: 12))
                         .foregroundColor(Color.from(.fleksyLightFont))
                     Spacer()
                     HStack {
-                        yearView("2022")
-                        ratingView("8.5")
+                        yearView(tvShow.firstAirDate.safelyUnwrapped.yearFromDateString)
+                        ratingView("\(tvShow.voteAverage ?? 0)")
                     }
                     .padding(.bottom, 8)
                 }
@@ -78,6 +80,6 @@ struct TVShowItemView: View {
 
 struct MovieItemView_Previews: PreviewProvider {
     static var previews: some View {
-        TVShowItemView()
+        TVShowItemView(tvShow: TVShow.dummyTVShow)
     }
 }

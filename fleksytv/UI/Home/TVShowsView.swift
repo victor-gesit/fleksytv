@@ -9,6 +9,8 @@ import SwiftUI
 
 struct TVShowsView: View {
     @State private var isPresented = false
+    @State var displayTVShow: TVShow?
+    @State var tvShows = TVShow.dummyTVShows
     var body: some View {
         ZStack {
             VStack {
@@ -20,15 +22,16 @@ struct TVShowsView: View {
                         .padding(.leading, 30)
                         .padding(.trailing, 30)
                         .padding(.bottom, 0)
-                        .padding(.top, 40)
+                        .padding(.top, 20)
                     Spacer()
                 }
                     ScrollView {
                         VStack {
-                            ForEach(TVShow.testTVShows, id: \.id) { tvShow in
-                                TVShowItemView()
+                            ForEach(tvShows, id: \.id) { tvShow in
+                                TVShowItemView(tvShow: tvShow)
                                     .padding(.bottom, 10)
                                     .onTapGesture {
+                                        displayTVShow = tvShow
                                         isPresented = true
                                     }
                             }
@@ -41,9 +44,24 @@ struct TVShowsView: View {
                     }
                     .listStyle(.plain)
             }
-            .fullScreenCover(isPresented: $isPresented, content: SimilarShowsSlidesView.init)
+            .fullScreenCover(item: $displayTVShow, onDismiss: {
+                displayTVShow = nil
+            }) { tvShow in
+                SimilarShowsSlidesView(tvShow: tvShow)
+            }
         }
         .background(Color.from(.fleksyBackground))
+        .onAppear(perform: {
+            loadShows()
+        })
+    }
+    
+    private func loadShows() {
+        APIServer.shared.getTopRatedTVShows { shows, error in
+            guard let shows = shows else { return }
+            print("TVV ", shows)
+            tvShows = shows
+        }
     }
 }
 

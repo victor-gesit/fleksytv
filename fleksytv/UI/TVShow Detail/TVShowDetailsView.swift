@@ -6,49 +6,69 @@
 //
 
 import SwiftUI
+import CachedAsyncImage
 
 struct TVShowDetailsView: View {
-    init() {
-        UITextView.appearance().backgroundColor = .clear
-    }
-    var genres = ["Action", "Comedy", "Sci-Fi", "Action1", "Comedy2", "Sci-Fi3"]
+    @State var tvShow: TVShow
     var body: some View {
         VStack(alignment: .leading) {
-            Image.from(.testImageCover)
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(height: 400)
-                .cornerRadius(10)
-                .clipped()
-            Text("Halo")
+            VStack(alignment: .center) {
+                ZStack {
+                    CachedAsyncImage(url: tvShow.posterPath.safelyUnwrapped.imageURLWith(.w45), content: { image in
+                        image
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .clipped()
+                            .blur(radius: 20)
+                    }, placeholder: {ProgressView()})
+                        .frame(minHeight: 300)
+                    CachedAsyncImage(url: tvShow.posterPath.safelyUnwrapped.imageURLWith(.original), content: { image in
+                        image
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .clipped()
+                    }, placeholder: {
+                        ProgressView()
+                            .frame(alignment: .center)
+                            .tint(.white)
+                    })
+                        .frame(minHeight: 300)
+                }
+            }
+            .frame(maxWidth: 300, maxHeight: 300)
+            .background(Color.from(.fleksyBackground))
+            .cornerRadius(10)
+            .frame(maxWidth: .infinity)
+            Text(tvShow.name.safelyUnwrapped)
                 .font(Font.custom(from: .axiformaSemibold, size: 16))
                 .foregroundColor(Color.from(.fleksyWhite))
                 .padding(.top, 10)
                 .padding(.bottom, 10)
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
-                    ForEach(genres, id: \.self) { genre in
-                        paddedText(genre)
+                    ForEach(tvShow.genres, id: \.self) { genre in
+                        PaddedText(text: genre)
                     }
                 }
             }
             Divider()
             HStack {
-                paddedText("2022")
-                ratingView("2.9")
+                PaddedText(text: tvShow.firstAirDate.safelyUnwrapped.yearFromDateString)
+                RatingView(rating: tvShow.voteAverage ?? 0)
             }
             ScrollView {
                 VStack(alignment: .leading) {
-                    Text("Hello from the other side")
+                    Text(tvShow.overview.safelyUnwrapped)
                         .font(Font.custom(from: .axiformaRegular, size: 12))
+                        .foregroundColor(Color.from(.fleksyWhite))
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .lineLimit(nil)
                 }.frame(maxWidth: .infinity)
-                    .padding(8)
-            }.frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(.blue)
-            .cornerRadius(18)
-            .padding(.top, 20)
+                    .padding(15)
+            }
+                .background(Color.from(.fleksyDarkTextBackground))
+                .cornerRadius(18)
+                .padding(.top, 20)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .padding(20)
@@ -56,39 +76,10 @@ struct TVShowDetailsView: View {
         .cornerRadius(30)
         .padding()
     }
-    
-    func paddedText(_ text: String) -> some View {
-        return Text(text)
-            .font(Font.custom(from: .axiformaRegular, size: 12))
-            .foregroundColor(Color.from(.fleksyWhite))
-            .padding(4)
-            .padding(.leading, 6)
-            .padding(.trailing, 6)
-            .frame(height: 24)
-            .background(Color.from(.fleksyLightGray))
-            .cornerRadius(8)
-    }
-    
-    func ratingView(_ rating: String) -> some View {
-        return HStack(spacing: 2) {
-            Image.from(.star)
-                .resizable()
-                .frame(width: 16, height: 16)
-            Text(rating)
-                .font(Font.custom(from: .axiformaRegular, size: 12))
-                .foregroundColor(Color.from(.fleksyWhite))
-        }
-        .padding(4)
-        .padding(.leading, 6)
-        .padding(.trailing, 6)
-        .frame(height: 24)
-        .background(Color.from(.fleksyLightGray))
-        .cornerRadius(8)
-    }
 }
 
 struct TVShowDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        TVShowDetailsView()
+        TVShowDetailsView(tvShow: .dummyTVShow)
     }
 }

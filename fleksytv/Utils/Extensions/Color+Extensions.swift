@@ -14,6 +14,7 @@ enum FleksyColor: String {
     case fleksyWhite = "#FFFFFF"
     case fleksyGray = "#262a33"
     case fleksyLightGray = "#343a47"
+    case fleksyDarkTextBackground = "#181920"
 }
 
 extension UIColor {

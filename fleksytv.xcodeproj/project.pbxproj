@@ -27,7 +27,6 @@
 		0D8C0F9C27F4550500F480D9 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C0F9B27F4550500F480D9 /* String+Extensions.swift */; };
 		0D8C0FA327F4819800F480D9 /* TVShowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C0FA227F4819800F480D9 /* TVShowsView.swift */; };
 		0D8C0FA527F482C600F480D9 /* TVShowItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C0FA427F482C600F480D9 /* TVShowItemView.swift */; };
-		0D90C36B27F48C5400E12ABF /* FleksyImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D90C36A27F48C5400E12ABF /* FleksyImage.swift */; };
 		0D90C37627F4C3D600E12ABF /* TVShowDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D90C37527F4C3D600E12ABF /* TVShowDetailsView.swift */; };
 		0DFA756A27F4E1DA001AD339 /* SimilarShowsSlidesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFA756927F4E1DA001AD339 /* SimilarShowsSlidesView.swift */; };
 		0DFA758027F4E9C1001AD339 /* Kastelov - Axiforma Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0DFA756C27F4E9C0001AD339 /* Kastelov - Axiforma Bold.otf */; };
@@ -41,6 +40,11 @@
 		0DFA759227F4E9C1001AD339 /* Kastelov - Axiforma Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0DFA757E27F4E9C1001AD339 /* Kastelov - Axiforma Book.otf */; };
 		0DFA759627F4ED73001AD339 /* Font+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFA759527F4ED73001AD339 /* Font+Extensions.swift */; };
 		0DFA759927F4FCFE001AD339 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFA759827F4FCFE001AD339 /* Color+Extensions.swift */; };
+		0DFA759B27F5170B001AD339 /* Image+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFA759A27F5170B001AD339 /* Image+Extensions.swift */; };
+		0DFA759E27F51752001AD339 /* PaddedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFA759D27F51752001AD339 /* PaddedText.swift */; };
+		0DFA75A027F517A7001AD339 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFA759F27F517A7001AD339 /* RatingView.swift */; };
+		0DFA75A227F5327E001AD339 /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFA75A127F5327E001AD339 /* Optional+Extensions.swift */; };
+		0DFA75A527F59F3F001AD339 /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 0DFA75A427F59F3F001AD339 /* CachedAsyncImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +88,6 @@
 		0D8C0F9B27F4550500F480D9 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		0D8C0FA227F4819800F480D9 /* TVShowsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowsView.swift; sourceTree = "<group>"; };
 		0D8C0FA427F482C600F480D9 /* TVShowItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowItemView.swift; sourceTree = "<group>"; };
-		0D90C36A27F48C5400E12ABF /* FleksyImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FleksyImage.swift; sourceTree = "<group>"; };
 		0D90C37527F4C3D600E12ABF /* TVShowDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowDetailsView.swift; sourceTree = "<group>"; };
 		0DFA756927F4E1DA001AD339 /* SimilarShowsSlidesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarShowsSlidesView.swift; sourceTree = "<group>"; };
 		0DFA756C27F4E9C0001AD339 /* Kastelov - Axiforma Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kastelov - Axiforma Bold.otf"; sourceTree = "<group>"; };
@@ -99,6 +102,10 @@
 		0DFA759427F4EC44001AD339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0DFA759527F4ED73001AD339 /* Font+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extensions.swift"; sourceTree = "<group>"; };
 		0DFA759827F4FCFE001AD339 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		0DFA759A27F5170B001AD339 /* Image+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extensions.swift"; sourceTree = "<group>"; };
+		0DFA759D27F51752001AD339 /* PaddedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddedText.swift; sourceTree = "<group>"; };
+		0DFA759F27F517A7001AD339 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		0DFA75A127F5327E001AD339 /* Optional+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DFA75A527F59F3F001AD339 /* CachedAsyncImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +272,8 @@
 				0D8C0F9B27F4550500F480D9 /* String+Extensions.swift */,
 				0DFA759527F4ED73001AD339 /* Font+Extensions.swift */,
 				0DFA759827F4FCFE001AD339 /* Color+Extensions.swift */,
+				0DFA759A27F5170B001AD339 /* Image+Extensions.swift */,
+				0DFA75A127F5327E001AD339 /* Optional+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -271,8 +281,8 @@
 		0D8C0F9F27F45A2600F480D9 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				0DFA759C27F51730001AD339 /* Subviews */,
 				0D90C37427F4C3B700E12ABF /* TVShow Detail */,
-				0D90C36927F48C3D00E12ABF /* Images */,
 				0D8C0FA127F4815F00F480D9 /* Home */,
 				0D8C0FA027F47A2E00F480D9 /* Util Pages */,
 			);
@@ -293,14 +303,6 @@
 				0D8C0FA427F482C600F480D9 /* TVShowItemView.swift */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		0D90C36927F48C3D00E12ABF /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				0D90C36A27F48C5400E12ABF /* FleksyImage.swift */,
-			);
-			path = Images;
 			sourceTree = "<group>";
 		};
 		0D90C36C27F48E5600E12ABF /* Resources */ = {
@@ -338,6 +340,15 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		0DFA759C27F51730001AD339 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				0DFA759D27F51752001AD339 /* PaddedText.swift */,
+				0DFA759F27F517A7001AD339 /* RatingView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -355,6 +366,7 @@
 			);
 			name = fleksytv;
 			packageProductDependencies = (
+				0DFA75A427F59F3F001AD339 /* CachedAsyncImage */,
 			);
 			productName = fleksytv;
 			productReference = 0D763F8727F318080054ADAF /* fleksytv.app */;
@@ -429,6 +441,7 @@
 			);
 			mainGroup = 0D763F7E27F318080054ADAF;
 			packageReferences = (
+				0DFA75A327F59F3F001AD339 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
 			);
 			productRefGroup = 0D763F8827F318080054ADAF /* Products */;
 			projectDirPath = "";
@@ -484,20 +497,23 @@
 				0D8C0F9527F42A9B00F480D9 /* APIServerProtocol.swift in Sources */,
 				0D8C0F9C27F4550500F480D9 /* String+Extensions.swift in Sources */,
 				0D8C0F8C27F371F000F480D9 /* TopRatedTVShowsResponse.swift in Sources */,
+				0DFA759B27F5170B001AD339 /* Image+Extensions.swift in Sources */,
+				0DFA759E27F51752001AD339 /* PaddedText.swift in Sources */,
 				0D8C0FA527F482C600F480D9 /* TVShowItemView.swift in Sources */,
 				0D8C0F6E27F3390D00F480D9 /* APIRoutes.swift in Sources */,
 				0D8C0F9227F428C100F480D9 /* UIAppDelegate.swift in Sources */,
 				0D8C0F7727F35B8200F480D9 /* Configuration.swift in Sources */,
 				0D763F8D27F318080054ADAF /* ContentView.swift in Sources */,
 				0D8C0F8E27F373AF00F480D9 /* GetGenresResponse.swift in Sources */,
+				0DFA75A027F517A7001AD339 /* RatingView.swift in Sources */,
 				0D8C0F8327F3627300F480D9 /* UserDefaults+Extension.swift in Sources */,
 				0D8C0F7527F352F900F480D9 /* TVShow.swift in Sources */,
 				0D763F8B27F318080054ADAF /* fleksytvApp.swift in Sources */,
 				0D8C0FA327F4819800F480D9 /* TVShowsView.swift in Sources */,
-				0D90C36B27F48C5400E12ABF /* FleksyImage.swift in Sources */,
 				0D90C37627F4C3D600E12ABF /* TVShowDetailsView.swift in Sources */,
 				0DFA759927F4FCFE001AD339 /* Color+Extensions.swift in Sources */,
 				0DFA759627F4ED73001AD339 /* Font+Extensions.swift in Sources */,
+				0DFA75A227F5327E001AD339 /* Optional+Extensions.swift in Sources */,
 				0D8C0F8627F36E8700F480D9 /* Genre.swift in Sources */,
 				0D8C0F9727F42B3000F480D9 /* APIServer.swift in Sources */,
 				0DFA756A27F4E1DA001AD339 /* SimilarShowsSlidesView.swift in Sources */,
@@ -854,6 +870,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0DFA75A327F59F3F001AD339 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-cached-async-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0DFA75A427F59F3F001AD339 /* CachedAsyncImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DFA75A327F59F3F001AD339 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */;
+			productName = CachedAsyncImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0D763F7F27F318080054ADAF /* Project object */;
 }

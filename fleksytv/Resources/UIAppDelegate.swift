@@ -12,11 +12,15 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         
         // Fetch The Movie DB Genres and Configuration
-        APIServer().getGenres { genres, error in
-            UserDefaults.standard.allGenres = genres
+        APIServer.shared.getGenres { genres, error in
+            var allGenres: [String: Genre] = [:]
+            genres?.forEach({ genre in
+                allGenres["\(genre.id)"] = genre
+            })
+            UserDefaults.standard.allGenres = allGenres
         }
-        
-        APIServer().getConfiguration { configuration, error in
+        APIServer.shared.getConfiguration { configuration, error in
+            print("CCC ", configuration)
             UserDefaults.standard.imageDBConfiguration = configuration
         }
         return true
