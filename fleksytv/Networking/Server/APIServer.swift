@@ -8,6 +8,9 @@
 import Foundation
 
 class APIServer: APIServerProtocol {
+    static let shared = APIServer()
+    private init() {}
+    
     private static let configuration = UserDefaults.standard.imageDBConfiguration
     
     func getTopRatedTVShows(pageNumber: Int = 1, completion: @escaping ([TVShow]?, Error?) -> Void) {

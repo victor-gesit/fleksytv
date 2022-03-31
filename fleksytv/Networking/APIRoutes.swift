@@ -27,7 +27,7 @@ extension APIRoute: CustomStringConvertible {
         case .genres: return Constants.BaseURL + "genre/movie/list"
         case .configuration: return Constants.BaseURL + "configuration"
         case .loadPicture(let path, let quality):
-            if let baseUrl = UserDefaults.standard.imageDBConfiguration?.images.baseUrl {
+            if let baseUrl = UserDefaults.standard.imageDBConfiguration?.images.secureBaseUrl {
                 return baseUrl + "\(quality.rawValue)\(path)"
             } else {
                 return "https://image.tmdb.org/t/p/original/wwemzKWzjKYJFfCeiB57q3r4Bcm.png"

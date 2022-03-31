@@ -15,7 +15,7 @@ struct TVShowDetailsView: View {
                 AsyncImage(url: tvShow.posterPath.safelyUnwrapped.imageURLWith(.original), content: { image in
                     image
                         .resizable()
-                        .aspectRatio(contentMode: .fit)
+                        .aspectRatio(contentMode: .fill)
                         .clipped()
                 }, placeholder: {
                     ProgressView()
@@ -28,7 +28,7 @@ struct TVShowDetailsView: View {
             .background(Color.from(.fleksyBackground))
             .cornerRadius(10)
             .frame(maxWidth: .infinity)
-            Text("Halo")
+            Text(tvShow.name.safelyUnwrapped)
                 .font(Font.custom(from: .axiformaSemibold, size: 16))
                 .foregroundColor(Color.from(.fleksyWhite))
                 .padding(.top, 10)
