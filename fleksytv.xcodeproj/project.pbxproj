@@ -43,6 +43,7 @@
 		0DFA759B27F5170B001AD339 /* Image+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFA759A27F5170B001AD339 /* Image+Extensions.swift */; };
 		0DFA759E27F51752001AD339 /* PaddedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFA759D27F51752001AD339 /* PaddedText.swift */; };
 		0DFA75A027F517A7001AD339 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFA759F27F517A7001AD339 /* RatingView.swift */; };
+		0DFA75A227F5327E001AD339 /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFA75A127F5327E001AD339 /* Optional+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		0DFA759A27F5170B001AD339 /* Image+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extensions.swift"; sourceTree = "<group>"; };
 		0DFA759D27F51752001AD339 /* PaddedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddedText.swift; sourceTree = "<group>"; };
 		0DFA759F27F517A7001AD339 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		0DFA75A127F5327E001AD339 /* Optional+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +271,7 @@
 				0DFA759527F4ED73001AD339 /* Font+Extensions.swift */,
 				0DFA759827F4FCFE001AD339 /* Color+Extensions.swift */,
 				0DFA759A27F5170B001AD339 /* Image+Extensions.swift */,
+				0DFA75A127F5327E001AD339 /* Optional+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -506,6 +509,7 @@
 				0D90C37627F4C3D600E12ABF /* TVShowDetailsView.swift in Sources */,
 				0DFA759927F4FCFE001AD339 /* Color+Extensions.swift in Sources */,
 				0DFA759627F4ED73001AD339 /* Font+Extensions.swift in Sources */,
+				0DFA75A227F5327E001AD339 /* Optional+Extensions.swift in Sources */,
 				0D8C0F8627F36E8700F480D9 /* Genre.swift in Sources */,
 				0D8C0F9727F42B3000F480D9 /* APIServer.swift in Sources */,
 				0DFA756A27F4E1DA001AD339 /* SimilarShowsSlidesView.swift in Sources */,

@@ -12,6 +12,12 @@ struct Configuration: Codable {
     var changeKeys: [String]
 }
 
+#if DEBUG
+extension Configuration {
+    static let dummyConfiguration = Configuration(images: .dummyConfiguration, changeKeys: [])
+}
+#endif
+
 struct ImageConfiguration: Codable {
     var baseUrl: String
     var secureBaseUrl: String
@@ -20,6 +26,12 @@ struct ImageConfiguration: Codable {
     var posterSizes: [String]
     var stillSizes: [String]
 }
+
+#if DEBUG
+extension ImageConfiguration {
+    static let dummyConfiguration = ImageConfiguration(baseUrl: "https://image.tmdb.org/t/p/", secureBaseUrl: "https://image.tmdb.org/t/p/", backdropSizes: [], logoSizes: [], posterSizes: [], stillSizes: [])
+}
+#endif
 
 class SnakeCaseDecoder: JSONDecoder {
     override init() {

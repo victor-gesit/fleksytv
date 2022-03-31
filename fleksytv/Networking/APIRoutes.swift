@@ -28,7 +28,7 @@ extension APIRoute: CustomStringConvertible {
         case .configuration: return Constants.BaseURL + "configuration"
         case .loadPicture(let path, let quality):
             if let baseUrl = UserDefaults.standard.imageDBConfiguration?.images.baseUrl {
-                return baseUrl + "/\(quality.rawValue)/\(path)"
+                return baseUrl + "\(quality.rawValue)\(path)"
             } else {
                 return "https://image.tmdb.org/t/p/original/wwemzKWzjKYJFfCeiB57q3r4Bcm.png"
             }

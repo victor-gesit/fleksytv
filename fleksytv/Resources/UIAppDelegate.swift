@@ -18,11 +18,23 @@ class AppDelegate: NSObject, UIApplicationDelegate {
                 allGenres["\(genre.id)"] = genre
             })
             UserDefaults.standard.allGenres = allGenres
+            
+            #if DEBUG
+            let dummyGenres: [String: Genre] = [
+                "1": Genre.dummyGenre1,
+                "2": Genre.dummyGenre2
+            ]
+            UserDefaults.standard.allGenres = dummyGenres
+            
+            let dummyConfiguration: Configuration = .dummyConfiguration
+            UserDefaults.standard.imageDBConfiguration = dummyConfiguration
+            #endif
         }
-        
+        #if PROD
         APIServer().getConfiguration { configuration, error in
             UserDefaults.standard.imageDBConfiguration = configuration
         }
+        #endif
         return true
     }
 }

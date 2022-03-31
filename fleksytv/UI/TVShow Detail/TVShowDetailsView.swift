@@ -8,19 +8,14 @@
 import SwiftUI
 
 struct TVShowDetailsView: View {
-    init() {
-        UITextView.appearance().backgroundColor = .clear
-    }
-    var genres = ["Action", "Comedy", "Sci-Fi", "Action1", "Comedy2", "Sci-Fi3"]
+    @State var tvShow: TVShow
     var body: some View {
         VStack(alignment: .leading) {
             VStack(alignment: .center) {
-                AsyncImage(url: URL(string: "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/movie-poster-template-design-3fde07497ef159f8ba0617dee83d982e_screen.jpg?ts=1636997626"), content: { image in
+                AsyncImage(url: tvShow.posterPath.safelyUnwrapped.imageURLWith(.original), content: { image in
                     image
                         .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(minHeight: 300)
-                        .cornerRadius(10)
+                        .aspectRatio(contentMode: .fit)
                         .clipped()
                 }, placeholder: {
                     ProgressView()
@@ -29,6 +24,9 @@ struct TVShowDetailsView: View {
                 })
                     .frame(minHeight: 300)
             }
+            .frame(maxWidth: 300, maxHeight: 300)
+            .background(Color.from(.fleksyBackground))
+            .cornerRadius(10)
             .frame(maxWidth: .infinity)
             Text("Halo")
                 .font(Font.custom(from: .axiformaSemibold, size: 16))
@@ -37,26 +35,26 @@ struct TVShowDetailsView: View {
                 .padding(.bottom, 10)
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
-                    ForEach(genres, id: \.self) { genre in
+                    ForEach(tvShow.genres, id: \.self) { genre in
                         PaddedText(text: genre)
                     }
                 }
             }
             Divider()
             HStack {
-                PaddedText(text: "2022")
-                RatingView(rating: "2.9")
+                PaddedText(text: tvShow.firstAirDate.safelyUnwrapped.yearFromDateString)
+                RatingView(rating: tvShow.voteAverage ?? 0)
             }
             ScrollView {
                 VStack(alignment: .leading) {
-                    Text("Hello from the other side")
+                    Text(tvShow.overview.safelyUnwrapped)
                         .font(Font.custom(from: .axiformaRegular, size: 12))
                         .foregroundColor(Color.from(.fleksyWhite))
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .lineLimit(nil)
                 }.frame(maxWidth: .infinity)
                     .padding(15)
-            }.frame(maxWidth: .infinity, minHeight: 100, maxHeight: .infinity)
+            }
                 .background(Color.from(.fleksyDarkTextBackground))
                 .cornerRadius(18)
                 .padding(.top, 20)
@@ -71,6 +69,6 @@ struct TVShowDetailsView: View {
 
 struct TVShowDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        TVShowDetailsView()
+        TVShowDetailsView(tvShow: .dummyTVShow)
     }
 }

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TVShowsView: View {
     @State private var isPresented = false
+    @State var showingTVShow: TVShow?
     var body: some View {
         ZStack {
             VStack {
@@ -25,10 +26,11 @@ struct TVShowsView: View {
                 }
                     ScrollView {
                         VStack {
-                            ForEach(TVShow.testTVShows, id: \.id) { tvShow in
-                                TVShowItemView()
+                            ForEach(TVShow.dummyTVShows, id: \.id) { tvShow in
+                                TVShowItemView(tvShow: tvShow)
                                     .padding(.bottom, 10)
                                     .onTapGesture {
+                                        showingTVShow = tvShow
                                         isPresented = true
                                     }
                             }
@@ -40,11 +42,12 @@ struct TVShowsView: View {
                         print("Reloading...")
                     }
                     .listStyle(.plain)
-                HStack {
-                    
-                }
             }
-            .fullScreenCover(isPresented: $isPresented, content: SimilarShowsSlidesView.init)
+            .fullScreenCover(item: $showingTVShow, onDismiss: {
+                showingTVShow = nil
+            }) { tvShow in
+                SimilarShowsSlidesView(tvShow: tvShow)
+            }
         }
         .background(Color.from(.fleksyBackground))
     }

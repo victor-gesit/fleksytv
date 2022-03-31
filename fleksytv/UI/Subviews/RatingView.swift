@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct RatingView: View {
-    @State var rating: String
+    @State var rating: Float
     var body: some View {
         HStack(spacing: 2) {
             Image.from(.star)
                 .resizable()
                 .frame(width: 16, height: 16)
-            Text(rating)
+            Text(String(format:"%.1f", rating))
                 .font(Font.custom(from: .axiformaRegular, size: 12))
                 .foregroundColor(Color.from(.fleksyWhite))
         }
@@ -30,6 +30,6 @@ struct RatingView: View {
 
 struct RatingView_Previews: PreviewProvider {
     static var previews: some View {
-        RatingView(rating: "8.5")
+        RatingView(rating: 8.5)
     }
 }

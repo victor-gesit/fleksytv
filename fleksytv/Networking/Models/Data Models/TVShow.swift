@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct TVShow: Codable {
+struct TVShow: Codable, Identifiable {
     var posterPath: String?
     var name: String?
     var overview: String?
@@ -32,18 +32,18 @@ extension TVShow {
 
 #if DEBUG
 extension TVShow {
-    static let testTVShow = TVShow(posterPath: "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/movie-poster-template-design-3fde07497ef159f8ba0617dee83d982e_screen.jpg?ts=1636997626", name: "Chuck Norris", overview: "Chuck Norris took a horse to a river. The horse drank the river into a valley", voteAverage: 2.5, firstAirDate: "1901", genreIds: [1, 2], id: 1)
-    static let testTVShows: [TVShow] = [
-        TVShow(posterPath: "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/movie-poster-template-design-3fde07497ef159f8ba0617dee83d982e_screen.jpg?ts=1636997626", name: "Chuck Norris", overview: "Chuck Norris took a horse to a river. The horse drank the river into a valley", voteAverage: 2.5, firstAirDate: "1901", genreIds: [1, 2], id: 1),
-        TVShow(posterPath: "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/movie-poster-template-design-3fde07497ef159f8ba0617dee83d982e_screen.jpg?ts=1636997626", name: "Chuck Norris", overview: "Chuck Norris took a horse to a river. The horse drank the river into a valley", voteAverage: 2.5, firstAirDate: "1901", genreIds: [1, 2], id: 2),
-        TVShow(posterPath: "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/movie-poster-template-design-3fde07497ef159f8ba0617dee83d982e_screen.jpg?ts=1636997626", name: "Chuck Norris", overview: "Chuck Norris took a horse to a river. The horse drank the river into a valley", voteAverage: 2.5, firstAirDate: "1901", genreIds: [1, 2], id: 3),
-        TVShow(posterPath: "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/movie-poster-template-design-3fde07497ef159f8ba0617dee83d982e_screen.jpg?ts=1636997626", name: "Chuck Norris", overview: "Chuck Norris took a horse to a river. The horse drank the river into a valley", voteAverage: 2.5, firstAirDate: "1901", genreIds: [1, 2], id: 4),
-        TVShow(posterPath: "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/movie-poster-template-design-3fde07497ef159f8ba0617dee83d982e_screen.jpg?ts=1636997626", name: "Chuck Norris", overview: "Chuck Norris took a horse to a river. The horse drank the river into a valley", voteAverage: 2.5, firstAirDate: "1901", genreIds: [1, 2], id: 5),
-        TVShow(posterPath: "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/movie-poster-template-design-3fde07497ef159f8ba0617dee83d982e_screen.jpg?ts=1636997626", name: "Chuck Norris", overview: "Chuck Norris took a horse to a river. The horse drank the river into a valley", voteAverage: 2.5, firstAirDate: "1901", genreIds: [1, 2], id: 6),
-        TVShow(posterPath: "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/movie-poster-template-design-3fde07497ef159f8ba0617dee83d982e_screen.jpg?ts=1636997626", name: "Chuck Norris", overview: "Chuck Norris took a horse to a river. The horse drank the river into a valley", voteAverage: 2.5, firstAirDate: "1901", genreIds: [1, 2], id: 7),
-        TVShow(posterPath: "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/movie-poster-template-design-3fde07497ef159f8ba0617dee83d982e_screen.jpg?ts=1636997626", name: "Chuck Norris", overview: "Chuck Norris took a horse to a river. The horse drank the river into a valley", voteAverage: 2.5, firstAirDate: "1901", genreIds: [1, 2], id: 8),
-        TVShow(posterPath: "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/movie-poster-template-design-3fde07497ef159f8ba0617dee83d982e_screen.jpg?ts=1636997626", name: "Chuck Norris", overview: "Chuck Norris took a horse to a river. The horse drank the river into a valley", voteAverage: 2.5, firstAirDate: "1901", genreIds: [1, 2], id: 9),
-        TVShow(posterPath: "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/movie-poster-template-design-3fde07497ef159f8ba0617dee83d982e_screen.jpg?ts=1636997626", name: "Chuck Norris", overview: "Chuck Norris took a horse to a river. The horse drank the river into a valley", voteAverage: 2.5, firstAirDate: "1901", genreIds: [1, 2], id: 10)
+    static let dummyTVShow = TVShow(posterPath: "/7q448EVOnuE3gVAx24krzO7SNXM.jpg", name: "Chuck Norris", overview: "Chuck Norris took a horse to a river. The horse drank the river into a valley", voteAverage: 2.5, firstAirDate: "2019-01-11", genreIds: [1, 2], id: 1)
+    static let dummyTVShows: [TVShow] = [
+        TVShow(posterPath: "/7q448EVOnuE3gVAx24krzO7SNXM.jpg", name: "Chuck Norris", overview: "Chuck Norris took a horse to a river. The horse drank from the river until it became a valley", voteAverage: 2.5, firstAirDate: "2019-01-11", genreIds: [1, 2], id: 1),
+        TVShow(posterPath: "/7q448EVOnuE3gVAx24krzO7SNXM.jpg", name: "Chuck Norris", overview: "Chuck Norris took a horse to a river. The horse drank from the river until it became a valley.", voteAverage: 2.5, firstAirDate: "2019-01-11", genreIds: [1, 2], id: 2),
+        TVShow(posterPath: "/7q448EVOnuE3gVAx24krzO7SNXM.jpg", name: "Chuck Norris", overview: "Chuck Norris took a horse to a river. The horse drank from the river until it became a valley.", voteAverage: 2.5, firstAirDate: "2019-01-11", genreIds: [1, 2], id: 3),
+        TVShow(posterPath: "/z0iCS5Znx7TeRwlYSd4c01Z0lFx.jpg", name: "Chuck Norris", overview: "Chuck Norris took a horse to a river. The horse drank from the river until it became a valley.", voteAverage: 2.5, firstAirDate: "2019-01-11", genreIds: [1, 2], id: 4),
+        TVShow(posterPath: "/qG59J1Q7rpBc1dvku4azbzcqo8h.jpg", name: "Chuck Norris", overview: "Chuck Norris took a horse to a river. The horse drank from the river until it became a valley.", voteAverage: 2.5, firstAirDate: "2019-01-11", genreIds: [1, 2], id: 5),
+        TVShow(posterPath: "/q8eejQcg1bAqImEV8jh8RtBD4uH.jpg", name: "Chuck Norris", overview: "Chuck Norris took a horse to a river. The horse from the river until it became a valley.", voteAverage: 2.5, firstAirDate: "2019-01-11", genreIds: [1, 2], id: 6),
+        TVShow(posterPath: "/ohGz4HDYGTite1GmRhRuBMVAn03.jpg", name: "Chuck Norris", overview: "Chuck Norris took a horse to a river. The horse drank from the river until it became a valley.", voteAverage: 2.5, firstAirDate: "2019-01-11", genreIds: [1, 2], id: 7),
+        TVShow(posterPath: "/xxv8Ibs8Anni6qrWkAf60rDsPCu.jpg", name: "Chuck Norris", overview: "Chuck Norris took a horse to a river. The horse drank from the river until it became a valley.", voteAverage: 2.5, firstAirDate: "2019-01-11", genreIds: [1, 2], id: 8),
+        TVShow(posterPath: "/xxv8Ibs8Anni6qrWkAf60rDsPCu.jpg", name: "Chuck Norris", overview: "Chuck Norris took a horse to a river. The horse drank from the river until it became a valley.", voteAverage: 2.5, firstAirDate: "2019-01-11", genreIds: [1, 2], id: 9),
+        TVShow(posterPath: "/xxv8Ibs8Anni6qrWkAf60rDsPCu.jpg", name: "Chuck Norris", overview: "Chuck Norris took a horse to a river. The horse drank from the river until it became a valley.", voteAverage: 2.5, firstAirDate: "2019-01-11", genreIds: [1, 2], id: 10)
     ]
 }
 #endif

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SimilarShowsSlidesView: View {
     @Environment(\.presentationMode) var presentationMode
+    @State var tvShow: TVShow
     var body: some View {
         VStack {
             HStack {
@@ -26,7 +27,7 @@ struct SimilarShowsSlidesView: View {
             }
             TabView {
                 ForEach(0..<30) { i in
-                    TVShowDetailsView()
+                    TVShowDetailsView(tvShow: tvShow)
                 }
             }
             .tabViewStyle(.page)
@@ -40,6 +41,6 @@ struct SimilarShowsSlidesView: View {
 
 struct SimilarShowsSlidesView_Previews: PreviewProvider {
     static var previews: some View {
-        SimilarShowsSlidesView()
+        SimilarShowsSlidesView(tvShow: TVShow.dummyTVShow)
     }
 }
