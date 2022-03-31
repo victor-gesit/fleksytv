@@ -13,17 +13,27 @@ struct TVShowDetailsView: View {
     var body: some View {
         VStack(alignment: .leading) {
             VStack(alignment: .center) {
-                CachedAsyncImage(url: tvShow.posterPath.safelyUnwrapped.imageURLWith(.original), content: { image in
-                    image
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .clipped()
-                }, placeholder: {
-                    ProgressView()
-                        .frame(alignment: .center)
-                        .tint(.white)
-                })
-                    .frame(minHeight: 300)
+                ZStack {
+                    CachedAsyncImage(url: tvShow.posterPath.safelyUnwrapped.imageURLWith(.w45), content: { image in
+                        image
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .clipped()
+                            .blur(radius: 20)
+                    }, placeholder: {ProgressView()})
+                        .frame(minHeight: 300)
+                    CachedAsyncImage(url: tvShow.posterPath.safelyUnwrapped.imageURLWith(.original), content: { image in
+                        image
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .clipped()
+                    }, placeholder: {
+                        ProgressView()
+                            .frame(alignment: .center)
+                            .tint(.white)
+                    })
+                        .frame(minHeight: 300)
+                }
             }
             .frame(maxWidth: 300, maxHeight: 300)
             .background(Color.from(.fleksyBackground))

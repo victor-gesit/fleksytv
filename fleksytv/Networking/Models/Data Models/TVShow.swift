@@ -9,6 +9,7 @@ import Foundation
 
 struct TVShow: Codable, Identifiable {
     var posterPath: String?
+    var backdropPath: String?
     var name: String?
     var overview: String?
     var voteAverage: Float?

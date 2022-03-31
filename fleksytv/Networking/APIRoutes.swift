@@ -43,6 +43,11 @@ extension APIRoute: CustomStringConvertible {
 enum ImageQuality: String {
     case original
     case w500
+    case w300
+    case w185
+    case w154
+    case w92
+    case w45
 }
 
 enum AppError: Error {

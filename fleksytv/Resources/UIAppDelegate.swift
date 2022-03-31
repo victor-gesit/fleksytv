@@ -20,6 +20,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
             UserDefaults.standard.allGenres = allGenres
         }
         APIServer.shared.getConfiguration { configuration, error in
+            print("CCC ", configuration)
             UserDefaults.standard.imageDBConfiguration = configuration
         }
         return true
