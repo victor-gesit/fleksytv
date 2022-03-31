@@ -14,6 +14,37 @@
 		0D763F9C27F318090054ADAF /* fleksytvTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D763F9B27F318090054ADAF /* fleksytvTests.swift */; };
 		0D763FA627F318090054ADAF /* fleksytvUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D763FA527F318090054ADAF /* fleksytvUITests.swift */; };
 		0D763FA827F318090054ADAF /* fleksytvUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D763FA727F318090054ADAF /* fleksytvUITestsLaunchTests.swift */; };
+		0D8C0F6E27F3390D00F480D9 /* APIRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C0F6D27F3390D00F480D9 /* APIRoutes.swift */; };
+		0D8C0F7527F352F900F480D9 /* TVShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C0F7427F352F900F480D9 /* TVShow.swift */; };
+		0D8C0F7727F35B8200F480D9 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C0F7627F35B8200F480D9 /* Configuration.swift */; };
+		0D8C0F8327F3627300F480D9 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C0F8227F3627300F480D9 /* UserDefaults+Extension.swift */; };
+		0D8C0F8627F36E8700F480D9 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C0F8527F36E8700F480D9 /* Genre.swift */; };
+		0D8C0F8C27F371F000F480D9 /* TopRatedTVShowsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C0F8B27F371F000F480D9 /* TopRatedTVShowsResponse.swift */; };
+		0D8C0F8E27F373AF00F480D9 /* GetGenresResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C0F8D27F373AF00F480D9 /* GetGenresResponse.swift */; };
+		0D8C0F9227F428C100F480D9 /* UIAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C0F9127F428C100F480D9 /* UIAppDelegate.swift */; };
+		0D8C0F9527F42A9B00F480D9 /* APIServerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C0F9427F42A9B00F480D9 /* APIServerProtocol.swift */; };
+		0D8C0F9727F42B3000F480D9 /* APIServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C0F9627F42B3000F480D9 /* APIServer.swift */; };
+		0D8C0F9C27F4550500F480D9 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C0F9B27F4550500F480D9 /* String+Extensions.swift */; };
+		0D8C0FA327F4819800F480D9 /* TVShowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C0FA227F4819800F480D9 /* TVShowsView.swift */; };
+		0D8C0FA527F482C600F480D9 /* TVShowItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C0FA427F482C600F480D9 /* TVShowItemView.swift */; };
+		0D90C37627F4C3D600E12ABF /* TVShowDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D90C37527F4C3D600E12ABF /* TVShowDetailsView.swift */; };
+		0DFA756A27F4E1DA001AD339 /* SimilarShowsSlidesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFA756927F4E1DA001AD339 /* SimilarShowsSlidesView.swift */; };
+		0DFA758027F4E9C1001AD339 /* Kastelov - Axiforma Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0DFA756C27F4E9C0001AD339 /* Kastelov - Axiforma Bold.otf */; };
+		0DFA758227F4E9C1001AD339 /* Kastelov - Axiforma Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0DFA756E27F4E9C0001AD339 /* Kastelov - Axiforma Regular.otf */; };
+		0DFA758327F4E9C1001AD339 /* Kastelov - Axiforma Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0DFA756F27F4E9C0001AD339 /* Kastelov - Axiforma Light.otf */; };
+		0DFA758627F4E9C1001AD339 /* Kastelov - Axiforma Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0DFA757227F4E9C0001AD339 /* Kastelov - Axiforma Thin.otf */; };
+		0DFA758827F4E9C1001AD339 /* Kastelov - Axiforma ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0DFA757427F4E9C0001AD339 /* Kastelov - Axiforma ExtraBold.otf */; };
+		0DFA758B27F4E9C1001AD339 /* Kastelov - Axiforma SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0DFA757727F4E9C1001AD339 /* Kastelov - Axiforma SemiBold.otf */; };
+		0DFA758E27F4E9C1001AD339 /* Kastelov - Axiforma Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0DFA757A27F4E9C1001AD339 /* Kastelov - Axiforma Heavy.otf */; };
+		0DFA758F27F4E9C1001AD339 /* Kastelov - Axiforma Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0DFA757B27F4E9C1001AD339 /* Kastelov - Axiforma Medium.otf */; };
+		0DFA759227F4E9C1001AD339 /* Kastelov - Axiforma Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0DFA757E27F4E9C1001AD339 /* Kastelov - Axiforma Book.otf */; };
+		0DFA759627F4ED73001AD339 /* Font+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFA759527F4ED73001AD339 /* Font+Extensions.swift */; };
+		0DFA759927F4FCFE001AD339 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFA759827F4FCFE001AD339 /* Color+Extensions.swift */; };
+		0DFA759B27F5170B001AD339 /* Image+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFA759A27F5170B001AD339 /* Image+Extensions.swift */; };
+		0DFA759E27F51752001AD339 /* PaddedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFA759D27F51752001AD339 /* PaddedText.swift */; };
+		0DFA75A027F517A7001AD339 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFA759F27F517A7001AD339 /* RatingView.swift */; };
+		0DFA75A227F5327E001AD339 /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFA75A127F5327E001AD339 /* Optional+Extensions.swift */; };
+		0DFA75A527F59F3F001AD339 /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 0DFA75A427F59F3F001AD339 /* CachedAsyncImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +75,37 @@
 		0D763FA127F318090054ADAF /* fleksytvUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fleksytvUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D763FA527F318090054ADAF /* fleksytvUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fleksytvUITests.swift; sourceTree = "<group>"; };
 		0D763FA727F318090054ADAF /* fleksytvUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fleksytvUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0D8C0F6D27F3390D00F480D9 /* APIRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRoutes.swift; sourceTree = "<group>"; };
+		0D8C0F7427F352F900F480D9 /* TVShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShow.swift; sourceTree = "<group>"; };
+		0D8C0F7627F35B8200F480D9 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		0D8C0F8227F3627300F480D9 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		0D8C0F8527F36E8700F480D9 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		0D8C0F8B27F371F000F480D9 /* TopRatedTVShowsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedTVShowsResponse.swift; sourceTree = "<group>"; };
+		0D8C0F8D27F373AF00F480D9 /* GetGenresResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGenresResponse.swift; sourceTree = "<group>"; };
+		0D8C0F9127F428C100F480D9 /* UIAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAppDelegate.swift; sourceTree = "<group>"; };
+		0D8C0F9427F42A9B00F480D9 /* APIServerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServerProtocol.swift; sourceTree = "<group>"; };
+		0D8C0F9627F42B3000F480D9 /* APIServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServer.swift; sourceTree = "<group>"; };
+		0D8C0F9B27F4550500F480D9 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		0D8C0FA227F4819800F480D9 /* TVShowsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowsView.swift; sourceTree = "<group>"; };
+		0D8C0FA427F482C600F480D9 /* TVShowItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowItemView.swift; sourceTree = "<group>"; };
+		0D90C37527F4C3D600E12ABF /* TVShowDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowDetailsView.swift; sourceTree = "<group>"; };
+		0DFA756927F4E1DA001AD339 /* SimilarShowsSlidesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarShowsSlidesView.swift; sourceTree = "<group>"; };
+		0DFA756C27F4E9C0001AD339 /* Kastelov - Axiforma Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kastelov - Axiforma Bold.otf"; sourceTree = "<group>"; };
+		0DFA756E27F4E9C0001AD339 /* Kastelov - Axiforma Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kastelov - Axiforma Regular.otf"; sourceTree = "<group>"; };
+		0DFA756F27F4E9C0001AD339 /* Kastelov - Axiforma Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kastelov - Axiforma Light.otf"; sourceTree = "<group>"; };
+		0DFA757227F4E9C0001AD339 /* Kastelov - Axiforma Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kastelov - Axiforma Thin.otf"; sourceTree = "<group>"; };
+		0DFA757427F4E9C0001AD339 /* Kastelov - Axiforma ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kastelov - Axiforma ExtraBold.otf"; sourceTree = "<group>"; };
+		0DFA757727F4E9C1001AD339 /* Kastelov - Axiforma SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kastelov - Axiforma SemiBold.otf"; sourceTree = "<group>"; };
+		0DFA757A27F4E9C1001AD339 /* Kastelov - Axiforma Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kastelov - Axiforma Heavy.otf"; sourceTree = "<group>"; };
+		0DFA757B27F4E9C1001AD339 /* Kastelov - Axiforma Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kastelov - Axiforma Medium.otf"; sourceTree = "<group>"; };
+		0DFA757E27F4E9C1001AD339 /* Kastelov - Axiforma Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kastelov - Axiforma Book.otf"; sourceTree = "<group>"; };
+		0DFA759427F4EC44001AD339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0DFA759527F4ED73001AD339 /* Font+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extensions.swift"; sourceTree = "<group>"; };
+		0DFA759827F4FCFE001AD339 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		0DFA759A27F5170B001AD339 /* Image+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extensions.swift"; sourceTree = "<group>"; };
+		0DFA759D27F51752001AD339 /* PaddedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddedText.swift; sourceTree = "<group>"; };
+		0DFA759F27F517A7001AD339 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		0DFA75A127F5327E001AD339 /* Optional+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DFA75A527F59F3F001AD339 /* CachedAsyncImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,9 +157,13 @@
 		0D763F8927F318080054ADAF /* fleksytv */ = {
 			isa = PBXGroup;
 			children = (
+				0DFA759427F4EC44001AD339 /* Info.plist */,
+				0D90C36C27F48E5600E12ABF /* Resources */,
+				0D8C0F9F27F45A2600F480D9 /* UI */,
+				0D8C0F9927F454F500F480D9 /* Utils */,
+				0D8C0F6C27F3390300F480D9 /* Networking */,
 				0D763F8A27F318080054ADAF /* fleksytvApp.swift */,
 				0D763F8C27F318080054ADAF /* ContentView.swift */,
-				0D763F8E27F318090054ADAF /* Assets.xcassets */,
 				0D763F9027F318090054ADAF /* Preview Content */,
 			);
 			path = fleksytv;
@@ -127,6 +194,161 @@
 			path = fleksytvUITests;
 			sourceTree = "<group>";
 		};
+		0D8C0F6C27F3390300F480D9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				0D8C0F9327F42A8B00F480D9 /* Server */,
+				0D8C0F7827F3612500F480D9 /* Storage */,
+				0D8C0F7327F352EB00F480D9 /* Models */,
+				0D8C0F6D27F3390D00F480D9 /* APIRoutes.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		0D8C0F7327F352EB00F480D9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0D8C0F8A27F371CE00F480D9 /* Response Models */,
+				0D8C0F8727F371B300F480D9 /* Data Models */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0D8C0F7827F3612500F480D9 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				0D8C0F8127F3625F00F480D9 /* UserDefaults */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		0D8C0F8127F3625F00F480D9 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				0D8C0F8227F3627300F480D9 /* UserDefaults+Extension.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		0D8C0F8727F371B300F480D9 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				0D8C0F7427F352F900F480D9 /* TVShow.swift */,
+				0D8C0F7627F35B8200F480D9 /* Configuration.swift */,
+				0D8C0F8527F36E8700F480D9 /* Genre.swift */,
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		0D8C0F8A27F371CE00F480D9 /* Response Models */ = {
+			isa = PBXGroup;
+			children = (
+				0D8C0F8B27F371F000F480D9 /* TopRatedTVShowsResponse.swift */,
+				0D8C0F8D27F373AF00F480D9 /* GetGenresResponse.swift */,
+			);
+			path = "Response Models";
+			sourceTree = "<group>";
+		};
+		0D8C0F9327F42A8B00F480D9 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				0D8C0F9427F42A9B00F480D9 /* APIServerProtocol.swift */,
+				0D8C0F9627F42B3000F480D9 /* APIServer.swift */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		0D8C0F9927F454F500F480D9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0D8C0F9A27F454FB00F480D9 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0D8C0F9A27F454FB00F480D9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0D8C0F9B27F4550500F480D9 /* String+Extensions.swift */,
+				0DFA759527F4ED73001AD339 /* Font+Extensions.swift */,
+				0DFA759827F4FCFE001AD339 /* Color+Extensions.swift */,
+				0DFA759A27F5170B001AD339 /* Image+Extensions.swift */,
+				0DFA75A127F5327E001AD339 /* Optional+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0D8C0F9F27F45A2600F480D9 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0DFA759C27F51730001AD339 /* Subviews */,
+				0D90C37427F4C3B700E12ABF /* TVShow Detail */,
+				0D8C0FA127F4815F00F480D9 /* Home */,
+				0D8C0FA027F47A2E00F480D9 /* Util Pages */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		0D8C0FA027F47A2E00F480D9 /* Util Pages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Util Pages";
+			sourceTree = "<group>";
+		};
+		0D8C0FA127F4815F00F480D9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0D8C0FA227F4819800F480D9 /* TVShowsView.swift */,
+				0D8C0FA427F482C600F480D9 /* TVShowItemView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0D90C36C27F48E5600E12ABF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0DFA756B27F4E982001AD339 /* Fonts */,
+				0D763F8E27F318090054ADAF /* Assets.xcassets */,
+				0D8C0F9127F428C100F480D9 /* UIAppDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0D90C37427F4C3B700E12ABF /* TVShow Detail */ = {
+			isa = PBXGroup;
+			children = (
+				0D90C37527F4C3D600E12ABF /* TVShowDetailsView.swift */,
+				0DFA756927F4E1DA001AD339 /* SimilarShowsSlidesView.swift */,
+			);
+			path = "TVShow Detail";
+			sourceTree = "<group>";
+		};
+		0DFA756B27F4E982001AD339 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0DFA756C27F4E9C0001AD339 /* Kastelov - Axiforma Bold.otf */,
+				0DFA757E27F4E9C1001AD339 /* Kastelov - Axiforma Book.otf */,
+				0DFA757427F4E9C0001AD339 /* Kastelov - Axiforma ExtraBold.otf */,
+				0DFA757A27F4E9C1001AD339 /* Kastelov - Axiforma Heavy.otf */,
+				0DFA756F27F4E9C0001AD339 /* Kastelov - Axiforma Light.otf */,
+				0DFA757B27F4E9C1001AD339 /* Kastelov - Axiforma Medium.otf */,
+				0DFA756E27F4E9C0001AD339 /* Kastelov - Axiforma Regular.otf */,
+				0DFA757727F4E9C1001AD339 /* Kastelov - Axiforma SemiBold.otf */,
+				0DFA757227F4E9C0001AD339 /* Kastelov - Axiforma Thin.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		0DFA759C27F51730001AD339 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				0DFA759D27F51752001AD339 /* PaddedText.swift */,
+				0DFA759F27F517A7001AD339 /* RatingView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +365,9 @@
 			dependencies = (
 			);
 			name = fleksytv;
+			packageProductDependencies = (
+				0DFA75A427F59F3F001AD339 /* CachedAsyncImage */,
+			);
 			productName = fleksytv;
 			productReference = 0D763F8727F318080054ADAF /* fleksytv.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +440,9 @@
 				Base,
 			);
 			mainGroup = 0D763F7E27F318080054ADAF;
+			packageReferences = (
+				0DFA75A327F59F3F001AD339 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
+			);
 			productRefGroup = 0D763F8827F318080054ADAF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,7 +460,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D763F9227F318090054ADAF /* Preview Assets.xcassets in Resources */,
+				0DFA758B27F4E9C1001AD339 /* Kastelov - Axiforma SemiBold.otf in Resources */,
+				0DFA758F27F4E9C1001AD339 /* Kastelov - Axiforma Medium.otf in Resources */,
+				0DFA758327F4E9C1001AD339 /* Kastelov - Axiforma Light.otf in Resources */,
 				0D763F8F27F318090054ADAF /* Assets.xcassets in Resources */,
+				0DFA758827F4E9C1001AD339 /* Kastelov - Axiforma ExtraBold.otf in Resources */,
+				0DFA758227F4E9C1001AD339 /* Kastelov - Axiforma Regular.otf in Resources */,
+				0DFA759227F4E9C1001AD339 /* Kastelov - Axiforma Book.otf in Resources */,
+				0DFA758027F4E9C1001AD339 /* Kastelov - Axiforma Bold.otf in Resources */,
+				0DFA758627F4E9C1001AD339 /* Kastelov - Axiforma Thin.otf in Resources */,
+				0DFA758E27F4E9C1001AD339 /* Kastelov - Axiforma Heavy.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +494,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D8C0F9527F42A9B00F480D9 /* APIServerProtocol.swift in Sources */,
+				0D8C0F9C27F4550500F480D9 /* String+Extensions.swift in Sources */,
+				0D8C0F8C27F371F000F480D9 /* TopRatedTVShowsResponse.swift in Sources */,
+				0DFA759B27F5170B001AD339 /* Image+Extensions.swift in Sources */,
+				0DFA759E27F51752001AD339 /* PaddedText.swift in Sources */,
+				0D8C0FA527F482C600F480D9 /* TVShowItemView.swift in Sources */,
+				0D8C0F6E27F3390D00F480D9 /* APIRoutes.swift in Sources */,
+				0D8C0F9227F428C100F480D9 /* UIAppDelegate.swift in Sources */,
+				0D8C0F7727F35B8200F480D9 /* Configuration.swift in Sources */,
 				0D763F8D27F318080054ADAF /* ContentView.swift in Sources */,
+				0D8C0F8E27F373AF00F480D9 /* GetGenresResponse.swift in Sources */,
+				0DFA75A027F517A7001AD339 /* RatingView.swift in Sources */,
+				0D8C0F8327F3627300F480D9 /* UserDefaults+Extension.swift in Sources */,
+				0D8C0F7527F352F900F480D9 /* TVShow.swift in Sources */,
 				0D763F8B27F318080054ADAF /* fleksytvApp.swift in Sources */,
+				0D8C0FA327F4819800F480D9 /* TVShowsView.swift in Sources */,
+				0D90C37627F4C3D600E12ABF /* TVShowDetailsView.swift in Sources */,
+				0DFA759927F4FCFE001AD339 /* Color+Extensions.swift in Sources */,
+				0DFA759627F4ED73001AD339 /* Font+Extensions.swift in Sources */,
+				0DFA75A227F5327E001AD339 /* Optional+Extensions.swift in Sources */,
+				0D8C0F8627F36E8700F480D9 /* Genre.swift in Sources */,
+				0D8C0F9727F42B3000F480D9 /* APIServer.swift in Sources */,
+				0DFA756A27F4E1DA001AD339 /* SimilarShowsSlidesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,22 +680,24 @@
 				DEVELOPMENT_TEAM = 4EG6Z5662E;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = fleksytv/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gesit.fleksytv;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gesit.fleksytv-dev";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -452,12 +712,14 @@
 				DEVELOPMENT_TEAM = 4EG6Z5662E;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = fleksytv/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,9 +727,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gesit.fleksytv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PROD;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -607,6 +870,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0DFA75A327F59F3F001AD339 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-cached-async-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0DFA75A427F59F3F001AD339 /* CachedAsyncImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DFA75A327F59F3F001AD339 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */;
+			productName = CachedAsyncImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0D763F7F27F318080054ADAF /* Project object */;
 }
