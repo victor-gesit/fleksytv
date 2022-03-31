@@ -10,6 +10,7 @@ import SwiftUI
 struct SimilarShowsSlidesView: View {
     @Environment(\.presentationMode) var presentationMode
     @State var tvShow: TVShow
+    @State var similarShows: [TVShow] = []
     var body: some View {
         VStack {
             HStack {
@@ -26,8 +27,8 @@ struct SimilarShowsSlidesView: View {
                     }
             }
             TabView {
-                ForEach(0..<30) { i in
-                    TVShowDetailsView(tvShow: tvShow)
+                ForEach(similarShows.isEmpty ? [tvShow] : similarShows) { show in
+                    TVShowDetailsView(tvShow: show)
                 }
             }
             .tabViewStyle(.page)
@@ -35,7 +36,17 @@ struct SimilarShowsSlidesView: View {
                 .font(Font.custom(from: .axiformaMedium, size: 12))
                 .foregroundColor(Color.from(.fleksyLightFont))
         }
+        .onAppear(perform: {
+            fetchSimilarShows()
+        })
         .background(Color.from(.fleksyBackground))
+    }
+    
+    private func fetchSimilarShows() {
+        APIServer.shared.getSimilarTVShows(tvId: "\(tvShow.id)") { shows, error in
+            guard let shows = shows else { return }
+            similarShows = [tvShow] + shows
+        }
     }
 }
 
