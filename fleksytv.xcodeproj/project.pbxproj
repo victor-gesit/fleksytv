@@ -44,6 +44,7 @@
 		0DFA759E27F51752001AD339 /* PaddedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFA759D27F51752001AD339 /* PaddedText.swift */; };
 		0DFA75A027F517A7001AD339 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFA759F27F517A7001AD339 /* RatingView.swift */; };
 		0DFA75A227F5327E001AD339 /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFA75A127F5327E001AD339 /* Optional+Extensions.swift */; };
+		0DFA75A527F59F3F001AD339 /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 0DFA75A427F59F3F001AD339 /* CachedAsyncImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DFA75A527F59F3F001AD339 /* CachedAsyncImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +366,7 @@
 			);
 			name = fleksytv;
 			packageProductDependencies = (
+				0DFA75A427F59F3F001AD339 /* CachedAsyncImage */,
 			);
 			productName = fleksytv;
 			productReference = 0D763F8727F318080054ADAF /* fleksytv.app */;
@@ -438,6 +441,7 @@
 			);
 			mainGroup = 0D763F7E27F318080054ADAF;
 			packageReferences = (
+				0DFA75A327F59F3F001AD339 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
 			);
 			productRefGroup = 0D763F8827F318080054ADAF /* Products */;
 			projectDirPath = "";
@@ -866,6 +870,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0DFA75A327F59F3F001AD339 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-cached-async-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0DFA75A427F59F3F001AD339 /* CachedAsyncImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DFA75A327F59F3F001AD339 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */;
+			productName = CachedAsyncImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0D763F7F27F318080054ADAF /* Project object */;
 }

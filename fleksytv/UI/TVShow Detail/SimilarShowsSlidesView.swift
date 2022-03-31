@@ -35,6 +35,8 @@ struct SimilarShowsSlidesView: View {
             Text("Swipe for similar shows")
                 .font(Font.custom(from: .axiformaMedium, size: 12))
                 .foregroundColor(Color.from(.fleksyLightFont))
+                .padding(.bottom, 6)
+                .padding(.top, 2)
         }
         .onAppear(perform: {
             fetchSimilarShows()

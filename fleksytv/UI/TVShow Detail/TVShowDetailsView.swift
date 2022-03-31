@@ -6,13 +6,14 @@
 //
 
 import SwiftUI
+import CachedAsyncImage
 
 struct TVShowDetailsView: View {
     @State var tvShow: TVShow
     var body: some View {
         VStack(alignment: .leading) {
             VStack(alignment: .center) {
-                AsyncImage(url: tvShow.posterPath.safelyUnwrapped.imageURLWith(.original), content: { image in
+                CachedAsyncImage(url: tvShow.posterPath.safelyUnwrapped.imageURLWith(.original), content: { image in
                     image
                         .resizable()
                         .aspectRatio(contentMode: .fill)
