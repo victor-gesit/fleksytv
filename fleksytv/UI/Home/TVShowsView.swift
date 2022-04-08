@@ -10,7 +10,11 @@ import SwiftUI
 struct TVShowsView: View {
     @State private var isPresented = false
     @State var displayTVShow: TVShow?
+    #if DEBUG
     @State var tvShows = TVShow.dummyTVShows
+    #elseif PROD
+    @State var tvShows: [TVShow] = []
+    #endif
     var body: some View {
         ZStack {
             VStack {
