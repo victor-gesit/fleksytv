@@ -52,8 +52,11 @@ struct SimilarShowsSlidesView: View {
     }
 }
 
+
+#if DEBUG
 struct SimilarShowsSlidesView_Previews: PreviewProvider {
     static var previews: some View {
         SimilarShowsSlidesView(tvShow: TVShow.dummyTVShow)
     }
 }
+#endif

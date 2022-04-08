@@ -78,8 +78,10 @@ struct TVShowItemView: View {
     }
 }
 
+#if DEBUG
 struct MovieItemView_Previews: PreviewProvider {
     static var previews: some View {
         TVShowItemView(tvShow: TVShow.dummyTVShow)
     }
 }
+#endif
