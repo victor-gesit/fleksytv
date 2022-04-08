@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0D763F8B27F318080054ADAF /* fleksytvApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D763F8A27F318080054ADAF /* fleksytvApp.swift */; };
-		0D763F8D27F318080054ADAF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D763F8C27F318080054ADAF /* ContentView.swift */; };
 		0D763F8F27F318090054ADAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D763F8E27F318090054ADAF /* Assets.xcassets */; };
 		0D763F9227F318090054ADAF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D763F9127F318090054ADAF /* Preview Assets.xcassets */; };
 		0D763F9C27F318090054ADAF /* fleksytvTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D763F9B27F318090054ADAF /* fleksytvTests.swift */; };
@@ -67,7 +66,6 @@
 /* Begin PBXFileReference section */
 		0D763F8727F318080054ADAF /* fleksytv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fleksytv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D763F8A27F318080054ADAF /* fleksytvApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fleksytvApp.swift; sourceTree = "<group>"; };
-		0D763F8C27F318080054ADAF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0D763F8E27F318090054ADAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D763F9127F318090054ADAF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0D763F9727F318090054ADAF /* fleksytvTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fleksytvTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,7 +161,6 @@
 				0D8C0F9927F454F500F480D9 /* Utils */,
 				0D8C0F6C27F3390300F480D9 /* Networking */,
 				0D763F8A27F318080054ADAF /* fleksytvApp.swift */,
-				0D763F8C27F318080054ADAF /* ContentView.swift */,
 				0D763F9027F318090054ADAF /* Preview Content */,
 			);
 			path = fleksytv;
@@ -503,7 +500,6 @@
 				0D8C0F6E27F3390D00F480D9 /* APIRoutes.swift in Sources */,
 				0D8C0F9227F428C100F480D9 /* UIAppDelegate.swift in Sources */,
 				0D8C0F7727F35B8200F480D9 /* Configuration.swift in Sources */,
-				0D763F8D27F318080054ADAF /* ContentView.swift in Sources */,
 				0D8C0F8E27F373AF00F480D9 /* GetGenresResponse.swift in Sources */,
 				0DFA75A027F517A7001AD339 /* RatingView.swift in Sources */,
 				0D8C0F8327F3627300F480D9 /* UserDefaults+Extension.swift in Sources */,
